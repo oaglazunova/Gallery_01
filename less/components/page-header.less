@@ -1,0 +1,21 @@
+.page-header {
+  background: @bkg-accent;
+  
+  & .container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  & .logo {
+    width: 280px;
+    height: 80px;
+    margin: 0;
+    .hidden-text;
+    background-color: @bkg-accent;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    &:hover {
+      background-color: @logo-hover;
+    }
+  }
+}

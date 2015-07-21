@@ -1,0 +1,57 @@
+.filter {
+  margin: 35px auto 10px;
+  max-width: 400px;
+  
+  @media(min-width: @screen--small) {
+    margin: 60px 0 25px .3%;
+    max-width: inherit;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    list-style: none;
+    
+    @media(min-width: @screen--small) {
+      justify-content: flex-start;
+    }
+  }
+  &__item {
+    margin: 0 20px 15px;
+    color: @text-lb;
+    font-size: @font-size--xs;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    @media(min-width: @screen--small) {
+      margin: 0 20px 0 0;
+    }
+    &:last-child {
+      margin: 0 20px 10px;
+      
+      @media(min-width: @screen--small) {
+        margin: 0;
+      }
+    }
+    &:hover {
+      color: @text-lb--accent;
+    }
+    &--active {
+      color: @text-lb--accent;
+      font-weight: bold;
+      position: relative;
+      cursor: auto;
+      
+      &:after {
+        height: 2px;
+        width: 100%;
+        background: @text-lb--accent;
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+      }
+    }
+  }
+}

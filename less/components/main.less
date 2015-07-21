@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "NewBaskervilleC";
+  src: url("../font/NewBaskervilleC.ttf");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100%;
+  color: @text-db;
+  font-size: @font-size--s;
+  font-family: @font-family;
+  background: @bkg-main;
+  position: relative;
+}
+
+.alert {
+  background: #ffffff center no-repeat;
+  border: 5px solid #ffd324;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;  
+  
+  & p {
+    text-align: center;
+    font-size: 2rem;
+    width: 310px;
+    height: 100px;
+    margin: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+    @media(min-width: @screen--small) {
+      font-size: 4rem;
+      width: 640px;
+      height: 200px;
+    }
+  }
+}
+
+.page-content {
+  padding: 0 0 @footer-height--mobile;
+  
+  @media(min-width: @screen--small) {
+    padding: 0 0 @footer-height + 60px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  border: 1px solid transparent;
+  position: relative;
+  
+  @media(min-width: @screen--small) {
+    width: @screen--small;
+  }
+  @media(min-width: @screen--medium) {
+    width: @screen--medium;
+  }
+  @media(min-width: @screen--lg) {
+    min-width: @screen--lg + 2;
+    width: auto;
+  }
+}
+
+.header {
+  &--h1, 
+  &--h2, 
+  &--h2bb, 
+  &--h3 {
+    color: #fff;
+    font-family: @font-family--accent;
+    font-weight: normal;
+  }
+  &--h1 {
+    font-size: @font-size--xl;
+  }
+  &--h2 {
+    font-size: @font-size--xxl;
+  }
+  &--h2bb {
+    font-size: @font-size--xxxl;
+  }
+  &--h3 {
+    font-size: @font-size--l;
+  }
+}

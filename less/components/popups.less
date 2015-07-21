@@ -1,0 +1,65 @@
+.popups {
+  
+  &__window {
+    display: none;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: rgba(0, 0, 0, .9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 20;
+  }
+  &__pict {
+    width: 90%;
+    max-width: 640px;
+    max-height: 480px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: 100%;
+  }
+  &__vid {
+    width: 90%;
+    max-width: 640px;
+    max-height: 360px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: 100%;
+    
+    & iframe {
+      width: 100%;
+      max-width: 640px;
+      max-height: 360px;
+      border: none;
+    }
+  }
+  &__close-pict,
+  &__close-vid {
+    display: inline-block;
+    fill: rgba(255, 255, 255, .2);
+    pointer-events: all;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    
+    @media(min-width: @screen--small) {
+      top: -30px;
+      right: -30px;
+    }
+    &:hover {
+      fill: rgba(255, 255, 255, .5);
+    }
+  }
+}
