@@ -29,11 +29,12 @@ body {
   font-size: @font-size--s;
   font-family: @font-family;
   background: @bkg-main;
+  
   position: relative;
 }
 
 .alert {
-  background: #ffffff center no-repeat;
+  background: #fff center no-repeat;
   border: 5px solid #ffd324;
   height: 100%;
   width: 100%;
@@ -110,5 +111,17 @@ body {
   }
   &--h3 {
     font-size: @font-size--l;
+  }
+}
+
+.text {
+  &--link {
+    text-decoration: underline;
+    cursor: pointer;
+    pointer-events: all;
+    float: right;
+    &:hover {
+      color: #fff;
+    }
   }
 }

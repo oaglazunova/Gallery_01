@@ -129,7 +129,7 @@ $(document).ready(function () {
   //end slider part
 
 
-
+  
   //popup (cont)
   $(".js-slide-3").each(function () {
     var zoomSvg = getChildByClassName(this, "blocks__btn");
@@ -285,10 +285,10 @@ var doFilter = function () {
   toggleModifier("filter__item", "filter__item--active", this);
   growBlocks(this);
   shrinkBlock("js-show-all", "js-filter-all", this);
-  shrinkBlock("js-culture", "js-filter-no-culture", this);
-  shrinkBlock("js-ext", "js-filter-no-ext", this);
-  shrinkBlock("js-atm", "js-filter-no-atm", this);
-  shrinkBlock("js-people", "js-filter-no-people", this);
+  shrinkBlock("js-filter1", "js-filter-not1", this);
+  shrinkBlock("js-filter2", "js-filter-not2", this);
+  shrinkBlock("js-filter3", "js-filter-not3", this);
+  shrinkBlock("js-filter4", "js-filter-not4", this);
 }
 
 for (var i = 0; i < filters.length; i++)

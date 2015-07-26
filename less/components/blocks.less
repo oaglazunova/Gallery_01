@@ -1,65 +1,11 @@
 .blocks {
   margin: 0 auto;
   position: relative;
-  
   &:after {
     content: '';
     display: block;
     clear: both;
-  }
-  &__promo {
-    height: 200px;
-    min-width: 300px;
-    width: 100%;
-    max-width: 620px;
-    padding: 20px 0 0 0;
-    margin: 0 auto 20px;
-    background-color: @bkg-slide;
-    background-position: 40% 90%;
-    
-    @media(min-width: @screen--small) {
-      height: 420px;
-      width: 620px;
-      padding: 80px 0 0 30px;
-      margin: 0 0 20px;
-      float: right;
-      position: static;
-    }
-    & .header--h2bb {
-      margin: 0 0 35px;
-      text-align: center;
-      
-      @media(min-width: @screen--small) {
-        text-align: left;
-      }
-    }
-    & ul {
-      max-width: 400px;
-      margin: 0 auto;
-      text-align: center;
-      
-      @media(min-width: @screen--small) {
-        width: auto;
-        margin: 0;
-        text-align: left;
-      }
-    }
-    & li {
-      display: inline-block;
-      margin: 0 3% 20px;
-      color: #fff;
-      font-family: @font-family--accent;
-      font-size: @font-size--m;
-      font-weight: normal;
-      list-style: none;
-      
-      @media(min-width: @screen--small) {
-        display: block;
-        margin: 0 0 20px 20px;
-        font-size: @font-size--m;
-      }
-    }
-  }
+  }  
   &__item {
     height: 200px;
     width: 300px;
@@ -69,7 +15,6 @@
     position: relative;
     overflow: hidden;
     opacity: 1;
-    
     & .header--h3 {
       position: absolute;
       z-index: 10;
@@ -89,16 +34,13 @@
     z-index: 12;
     bottom: 20px;
     right: 20px;
-    
     & .slider-arrow {
       margin: 0 0 0 9px;
       cursor: pointer;
-      
       & svg {
-        fill: rgba(255, 255, 255, .15);
-        
+        fill: rgba(255, 255, 255, .7);
         &:hover {
-          fill: rgba(255, 255, 255, .3);
+          fill: rgba(255, 255, 255, 1);
         }
       }
     }
@@ -109,15 +51,13 @@
     width: 300px;
     margin: 0 auto;
     position: relative;
-    float: left;    
+    float: left;
     background-repeat: no-repeat;
     background-position: center;
-    
     &--1 {
       text-align: center;
       line-height: 200px;
       z-index: 11;
-      
       .header--h2 {
         text-align: center;
         display: inline-block;
@@ -129,11 +69,10 @@
       padding: 30px 40px 30px 20px;
       background-color: @bkg-slide;
       z-index: 9;
-      
       & .text {
-        margin: 0 0 35px;
+        margin: 0 0 15px;
         color: @text-db--slide;
-        line-height: 2.2rem;
+        // line-height: 2.2rem;
       }
     }
     &--3,
@@ -149,7 +88,6 @@
     vertical-align: middle;
     line-height: normal;
     cursor: pointer;
-    
     @media(min-width: @screen--small) {
       fill: #fff;
     }
@@ -160,21 +98,18 @@
   transform: scale(.8);
   opacity: .2;
   transition: all .5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
-  
-  & .blocks__slider-controls, 
-  & .blocks__btn {
+  & .blocks__slider-controls, & .blocks__btn {
     pointer-events: none;
     cursor: auto;
   }
   & .blocks__slide {
     background-size: 120%;
-    
     &--1 {
       .header--h2 {
         transform: scale(1.2);
       }
     }
-  }  
+  }
 }
 
 .grow {
@@ -182,14 +117,12 @@
   background: @bkg-slide;
   opacity: 1;
   transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
-  
   & .blocks__slider-controls, & .blocks__zoom, & .blocks__play {
     pointer-events: all;
     cursor: pointer;
   }
   & .blocks__slide {
     background-size: 100%;
-    
     &--1 {
       .header--h2 {
         transform: scale(1);
