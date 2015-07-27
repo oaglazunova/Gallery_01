@@ -38,7 +38,7 @@
       margin: 0 0 0 9px;
       cursor: pointer;
       & svg {
-        fill: rgba(255, 255, 255, .7);
+        fill: rgba(255, 255, 255, 1);
         &:hover {
           fill: rgba(255, 255, 255, 1);
         }
@@ -66,11 +66,10 @@
       }
     }
     &--2 {
-      padding: 30px 40px 30px 20px;
+      padding: 20px;
       background-color: @bkg-slide;
       z-index: 9;
       & .text {
-        margin: 0 0 15px;
         color: @text-db--slide;
         // line-height: 2.2rem;
       }
@@ -98,6 +97,9 @@
   transform: scale(.8);
   opacity: .2;
   transition: all .5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+  
+  @media(min-width: @screen--small) {
+    }
   & .blocks__slider-controls, & .blocks__btn {
     pointer-events: none;
     cursor: auto;

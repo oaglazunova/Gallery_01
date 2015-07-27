@@ -1,18 +1,24 @@
 .page-header {
+  height: 80px;
+    margin: 0 0 35px;
   background: @bkg-accent;
+   @media(min-width: @screen--small) {
+    margin: 0 0 40px;
+  }
   
   & .container {
     display: flex;
     justify-content: flex-start;
   }
-  & .logo {
-    width: 280px;
+/*  & .logo {
+    width: 195px;
     height: 80px;
     margin: 0;
     .hidden-text;
     background-color: @bkg-accent;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100%;
     
     &:hover {
       background-color: @logo-hover;
@@ -22,4 +28,5 @@
       fill: white;
     }
   }
+  */
 }
