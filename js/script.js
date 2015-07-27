@@ -9,6 +9,9 @@ $(".js-grid").masonry({
 // masonry options end
 
 
+
+
+
 //Refreshes layout after screen size change 
 $(window).bind('resize', function(e)
 {
@@ -19,6 +22,7 @@ $(window).bind('resize', function(e)
   }, 100);
 });
 //refresh end
+
 
 
 
@@ -194,7 +198,7 @@ $(window).on('scroll', function () {
 
 
 
-/*
+
 //  Video auto-start
 var tag = document.createElement('script');
 tag.src = "http://www.youtube.com/iframe_api";
@@ -223,7 +227,7 @@ function onPlayerReady(frameId) {
     });
   }
   // end video auto-start
-*/
+
 
 
 

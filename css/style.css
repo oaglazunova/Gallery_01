@@ -589,7 +589,7 @@ body {
 
 .page-footer .copyright {
 	display: block;
-	color: #6b7076;
+	color: #fff;
 	font-family: "NewBaskervilleC";
 	font-size: 1.6rem;
 	padding: 5px 0 20px;
@@ -1048,7 +1048,7 @@ body {
 	height: 200px;
 	width: 300px;
 	margin: 0 0 20px;
-	background: #313336;
+	background: #505f7f;
 	float: left;
 	position: relative;
 	overflow: hidden;
