@@ -13,16 +13,17 @@ $(".js-grid").masonry({
 
 
 //Refreshes layout after screen size change 
+/*
 $(window).bind('resize', function(e)
 {
   if (window.RT) clearTimeout(window.RT);
   window.RT = setTimeout(function()
   {
-    this.location.reload(false); /* false to get page from cache */
+    this.location.reload(false); // false to get page from cache 
   }, 100);
 });
+*/
 //refresh end
-
 
 
 
