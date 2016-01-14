@@ -1,10 +1,8 @@
 .filter {
   margin: 0 auto 40px;
-//  max-width: 400px;
   
   @media(min-width: @screen--small) {
-    margin: 0 0 25px .3%;
-  //  max-width: inherit;
+    margin: 0 0 25px 3%;
   }
   &__list {
     display: flex;
@@ -12,8 +10,12 @@
     flex-wrap: wrap;
     margin: 0 auto;
     list-style: none;
+        line-height: 20px;
     
     @media(min-width: @screen--small) {
+      justify-content: space-around;
+    }
+    @media(min-width: @screen--medium) {
       justify-content: flex-start;
     }
   }
@@ -35,10 +37,10 @@
       }
     }
     &:hover {
-      color: @text-lb--accent;
+      color: @bkg-accent;
     }
     &--active {
-      color: @text-lb--accent;
+      color: @bkg-accent;
       font-weight: bold;
       position: relative;
       cursor: auto;
@@ -46,7 +48,7 @@
       &:after {
         height: 2px;
         width: 100%;
-        background: @text-lb--accent;
+        background: @bkg-accent;
         content: '';
         position: absolute;
         left: 0;

@@ -1,50 +1,49 @@
 .promo {
   display: none;
- // padding: 20px 0 0 0;  
-  background-color: @bkg-slide;
   position: relative;
   @media(min-width: @screen--medium) {
     display: block;
-    height: 420px;
-    width: 620px;
-    //  padding: 80px 0 0 30px;
+    height: 646px;
+    width: 460px;
     margin: 0 0 20px;
-//    float: right;
-  //  position: static;
   }
   &__slider-wrapper {
-    height: 420px;
-    width: 620px;
+    height: 540px;
+    width: 385px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    top: 105px;
     z-index: 1;
     & img:nth-child(5) {
       animation-delay: 0s;
     }
     & img:nth-child(4) {
-      animation-delay: 4s;
+      animation-delay: 3s;
     }
     & img:nth-child(3) {
-      animation-delay: 8s;
+      animation-delay: 6s;
     }
     & img:nth-child(2) {
-      animation-delay: 12s;
+      animation-delay: 9s;
     }
     & img:nth-child(1) {
-      animation-delay: 16s;
+      animation-delay: 12s;
     }
   }
   &__slide {
+    height: 540px;
+    width: 385px;
     position: absolute;
     top: 0;
-    left: 0;  
+    left: 0;
     animation: fade 20s infinite;
     opacity: 0;
   }
   & .header--h2bb {
     margin: 0 0 35px;
     text-align: center;
+    text-shadow: 2px 2px #000;
     @media(min-width: @screen--small) {
       text-align: left;
     }
@@ -52,7 +51,7 @@
   &__text-wrapper {
     position: absolute;
     z-index: 2;
-    top: 40px;
+    top: 0;
     left: 40px;
     & ul {
       max-width: 400px;
@@ -72,6 +71,7 @@
       font-size: @font-size--m;
       font-weight: normal;
       list-style: none;
+      text-shadow: 2px 2px #000;
       @media(min-width: @screen--small) {
         display: block;
         margin: 0 0 20px 20px;

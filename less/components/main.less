@@ -29,7 +29,6 @@ body {
   font-size: @font-size--s;
   font-family: @font-family;
   background: @bkg-main;
-  
   position: relative;
 }
 
@@ -44,8 +43,7 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
-  right: 0;  
-  
+  right: 0;
   & p {
     text-align: center;
     font-size: 2rem;
@@ -57,7 +55,6 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
-    
     @media(min-width: @screen--small) {
       font-size: 4rem;
       width: 640px;
@@ -67,10 +64,9 @@ body {
 }
 
 .page-content {
-  padding: 0 0 @footer-height--mobile;
-  
+  padding: 0 0 140px;
   @media(min-width: @screen--small) {
-    padding: 0 0 @footer-height + 40px;
+    padding: 0 0 160px;
   }
 }
 
@@ -78,7 +74,6 @@ body {
   margin: 0 auto;
   border: 1px solid transparent;
   position: relative;
-  
   @media(min-width: @screen--small) {
     width: @screen--small;
   }
@@ -86,15 +81,15 @@ body {
     width: @screen--medium;
   }
   @media(min-width: @screen--lg) {
-    min-width: @screen--lg + 2;
+    min-width: @screen--lg;
     width: auto;
   }
 }
 
 .header {
-  &--h1, 
-  &--h2, 
-  &--h2bb, 
+  &--h1,
+  &--h2,
+  &--h2bb,
   &--h3 {
     color: #fff;
     font-family: @font-family--accent;
@@ -115,8 +110,7 @@ body {
 }
 
 .text {
-  
-        margin: 0 0 1rem;
+  margin: 0 0 1rem;
   &--link {
     text-decoration: underline;
     cursor: pointer;
@@ -126,4 +120,8 @@ body {
       color: #fff;
     }
   }
+}
+
+.hidden {
+  .hidden-text;
 }

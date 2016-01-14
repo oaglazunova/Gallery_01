@@ -460,12 +460,12 @@ body {
 	color: #6b7076;
 	font-size: 1.4rem;
 	font-family: "PT Sans", sans-serif;
-	background: #ecf2ff;
+	background: #000;
 	position: relative;
 }
 
 .alert {
-	background: #ffffff center no-repeat;
+	background: #fff center no-repeat;
 	border: 5px solid #ffd324;
 	height: 100%;
 	width: 100%;
@@ -492,7 +492,7 @@ body {
 }
 
 .page-content {
-	padding: 0 0 100px;
+	padding: 0 0 140px;
 }
 
 .container {
@@ -541,10 +541,16 @@ body {
 	color: #fff;
 }
 
+.hidden {
+	border: 0;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+
 .page-header {
-	height: 80px;
 	margin: 0 0 35px;
-	background: #505f7f; /*  & .logo {
+	background: #dc5b1d; /*  & .logo {
     width: 195px;
     height: 80px;
     margin: 0;
@@ -576,13 +582,22 @@ body {
 
 .page-footer {
 	width: 100%;
-	background: #505f7f;
+	background: #dc5b1d;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 }
 
 .page-footer .container {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	width: 300px;
 	padding: 10px 0 0;
 }
@@ -595,6 +610,30 @@ body {
 	padding: 5px 0 20px;
 	margin: 0 auto;
 	text-align: center;
+}
+
+.page-footer .share-btns {
+	text-align: center;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding: 20px 0 0;
+}
+
+.page-footer .share-btns a {
+	margin: 0 20px 0 0;
+}
+
+.page-footer .share-btns a:last-child {
+	margin: 0;
+}
+
+.page-footer .share-btns a img {
+	width: 32px;
+	height: 32px;
 }
 
 .filter {
@@ -613,6 +652,7 @@ body {
 	flex-wrap: wrap;
 	margin: 0 auto;
 	list-style: none;
+	line-height: 20px;
 }
 
 .filter__item {
@@ -628,11 +668,11 @@ body {
 }
 
 .filter__item:hover {
-	color: #242526;
+	color: #dc5b1d;
 }
 
 .filter__item--active {
-	color: #242526;
+	color: #dc5b1d;
 	font-weight: bold;
 	position: relative;
 	cursor: auto;
@@ -641,7 +681,7 @@ body {
 .filter__item--active:after {
 	height: 2px;
 	width: 100%;
-	background: #242526;
+	background: #dc5b1d;
 	content: '';
 	position: absolute;
 	left: 0;
@@ -893,6 +933,106 @@ body {
 	background-repeat: no-repeat;
 }
 
+.block13-slide1 {
+	background-image: url(../img/13-1.jpg);
+	background-repeat: no-repeat;
+}
+
+.block13-slide3 {
+	background-image: url(../img/13-3.jpg);
+	background-repeat: no-repeat;
+}
+
+.block13-popup {
+	background-image: url(../img/13-popup.jpg);
+	background-repeat: no-repeat;
+}
+
+.block13-slide4 {
+	background-image: url(../img/13-4.jpg);
+	background-repeat: no-repeat;
+}
+
+.block14-slide1 {
+	background-image: url(../img/14-1.jpg);
+	background-repeat: no-repeat;
+}
+
+.block14-slide3 {
+	background-image: url(../img/14-3.jpg);
+	background-repeat: no-repeat;
+}
+
+.block14-popup {
+	background-image: url(../img/14-popup.jpg);
+	background-repeat: no-repeat;
+}
+
+.block14-slide4 {
+	background-image: url(../img/14-4.jpg);
+	background-repeat: no-repeat;
+}
+
+.block15-slide1 {
+	background-image: url(../img/15-1.jpg);
+	background-repeat: no-repeat;
+}
+
+.block15-slide3 {
+	background-image: url(../img/15-3.jpg);
+	background-repeat: no-repeat;
+}
+
+.block15-popup {
+	background-image: url(../img/15-popup.jpg);
+	background-repeat: no-repeat;
+}
+
+.block15-slide4 {
+	background-image: url(../img/15-4.jpg);
+	background-repeat: no-repeat;
+}
+
+.block16-slide1 {
+	background-image: url(../img/16-1.jpg);
+	background-repeat: no-repeat;
+}
+
+.block16-slide3 {
+	background-image: url(../img/16-3.jpg);
+	background-repeat: no-repeat;
+}
+
+.block16-popup {
+	background-image: url(../img/16-popup.jpg);
+	background-repeat: no-repeat;
+}
+
+.block16-slide4 {
+	background-image: url(../img/16-4.jpg);
+	background-repeat: no-repeat;
+}
+
+.block17-slide1 {
+	background-image: url(../img/17-1.jpg);
+	background-repeat: no-repeat;
+}
+
+.block17-slide3 {
+	background-image: url(../img/17-3.jpg);
+	background-repeat: no-repeat;
+}
+
+.block17-popup {
+	background-image: url(../img/17-popup.jpg);
+	background-repeat: no-repeat;
+}
+
+.block17-slide4 {
+	background-image: url(../img/17-4.jpg);
+	background-repeat: no-repeat;
+}
+
 .popups__window {
 	display: none;
 	height: 100%;
@@ -958,16 +1098,16 @@ body {
 
 .promo {
 	display: none;
-	background-color: #313336;
 	position: relative;
 }
 
 .promo__slider-wrapper {
-	height: 420px;
-	width: 620px;
+	height: 540px;
+	width: 385px;
 	margin: 0 auto;
 	overflow: hidden;
 	position: relative;
+	top: 105px;
 	z-index: 1;
 }
 
@@ -977,26 +1117,28 @@ body {
 }
 
 .promo__slider-wrapper img:nth-child(4) {
-	-webkit-animation-delay: 4s;
-	animation-delay: 4s;
+	-webkit-animation-delay: 3s;
+	animation-delay: 3s;
 }
 
 .promo__slider-wrapper img:nth-child(3) {
-	-webkit-animation-delay: 8s;
-	animation-delay: 8s;
+	-webkit-animation-delay: 6s;
+	animation-delay: 6s;
 }
 
 .promo__slider-wrapper img:nth-child(2) {
+	-webkit-animation-delay: 9s;
+	animation-delay: 9s;
+}
+
+.promo__slider-wrapper img:nth-child(1) {
 	-webkit-animation-delay: 12s;
 	animation-delay: 12s;
 }
 
-.promo__slider-wrapper img:nth-child(1) {
-	-webkit-animation-delay: 16s;
-	animation-delay: 16s;
-}
-
 .promo__slide {
+	height: 540px;
+	width: 385px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1008,12 +1150,13 @@ body {
 .promo .header--h2bb {
 	margin: 0 0 35px;
 	text-align: center;
+	text-shadow: 2px 2px #000;
 }
 
 .promo__text-wrapper {
 	position: absolute;
 	z-index: 2;
-	top: 40px;
+	top: 0;
 	left: 40px;
 }
 
@@ -1031,6 +1174,7 @@ body {
 	font-size: 2rem;
 	font-weight: normal;
 	list-style: none;
+	text-shadow: 2px 2px #000;
 }
 
 .blocks {
@@ -1045,21 +1189,19 @@ body {
 }
 
 .blocks__item {
-	height: 200px;
-	width: 300px;
+	height: 313px;
+	width: 220px;
 	margin: 0 0 20px;
-	background: #505f7f;
+	background: #dc5b1d;
 	float: left;
 	position: relative;
 	overflow: hidden;
 	opacity: 1;
+	border: 1px solid #dc5b1d;
 }
 
 .blocks__item .header--h3 {
-	position: absolute;
-	z-index: 10;
-	bottom: 20px;
-	left: 20px;
+	margin: 0 0 30px;
 }
 
 .blocks__item ul {
@@ -1082,18 +1224,22 @@ body {
 	cursor: pointer;
 }
 
+.blocks__slider-controls .slider-arrow--prev {
+	margin: 0 115px 0 0;
+}
+
 .blocks__slider-controls .slider-arrow svg {
-	fill: #ffffff;
+	fill: #fff;
 }
 
 .blocks__slider-controls .slider-arrow svg:hover {
-	fill: #ffffff;
+	fill: #dc5b1d;
 }
 
 .blocks__slide {
 	display: block;
-	height: 200px;
-	width: 300px;
+	height: 313px;
+	width: 220px;
 	margin: 0 auto;
 	position: relative;
 	float: left;
@@ -1103,7 +1249,7 @@ body {
 
 .blocks__slide--1 {
 	text-align: center;
-	line-height: 200px;
+	line-height: 313px;
 	z-index: 11;
 }
 
@@ -1127,7 +1273,7 @@ body {
 .blocks__slide--3,
 .blocks__slide--4 {
 	text-align: center;
-	line-height: 200px;
+	line-height: 313px;
 }
 
 .blocks__btn {
@@ -1137,6 +1283,10 @@ body {
 	vertical-align: middle;
 	line-height: normal;
 	cursor: pointer;
+}
+
+.blocks__btn:hover {
+	fill: #dc5b1d;
 }
 
 .shrink {
@@ -1202,12 +1352,12 @@ body {
 
 .block1-slide1 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/01-1@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block1-slide3 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/01-3@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block1-popup { /* on retina, use image that's scaled by 2 */
@@ -1217,17 +1367,17 @@ body {
 
 .block1-slide4 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/01-4@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block2-slide1 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/02-1@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block2-slide3 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/02-3@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 3 220px 313px;
 }
 
 .block2-popup { /* on retina, use image that's scaled by 2 */
@@ -1237,17 +1387,17 @@ body {
 
 .block2-slide4 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/02-4@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block3-slide1 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/03-1@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block3-slide3 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/03-3@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block3-popup { /* on retina, use image that's scaled by 2 */
@@ -1257,17 +1407,17 @@ body {
 
 .block3-slide4 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/03-4@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block4-slide1 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/04-1@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block4-slide3 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/04-3@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block4-popup { /* on retina, use image that's scaled by 2 */
@@ -1277,17 +1427,17 @@ body {
 
 .block4-slide4 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/04-4@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block5-slide1 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/05-1@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block5-slide3 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/05-3@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block5-popup { /* on retina, use image that's scaled by 2 */
@@ -1297,17 +1447,17 @@ body {
 
 .block5-slide4 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/05-4@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block6-slide1 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/06-1@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block6-slide3 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/06-3@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block6-popup { /* on retina, use image that's scaled by 2 */
@@ -1317,17 +1467,17 @@ body {
 
 .block6-slide4 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/06-4@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block7-slide1 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/07-1@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block7-slide3 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/07-3@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block7-popup { /* on retina, use image that's scaled by 2 */
@@ -1337,17 +1487,17 @@ body {
 
 .block7-slide4 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/07-4@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block8-slide1 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/08-1@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block8-slide3 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/08-3@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block8-popup { /* on retina, use image that's scaled by 2 */
@@ -1357,17 +1507,17 @@ body {
 
 .block8-slide4 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/08-4@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block9-slide1 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/09-1@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block9-slide3 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/09-3@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block9-popup { /* on retina, use image that's scaled by 2 */
@@ -1377,17 +1527,17 @@ body {
 
 .block9-slide4 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/09-4@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block10-slide1 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/10-1@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block10-slide3 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/10-3@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block10-popup { /* on retina, use image that's scaled by 2 */
@@ -1397,17 +1547,17 @@ body {
 
 .block10-slide4 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/10-4@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block11-slide1 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/11-1@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block11-slide3 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/11-3@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block11-popup { /* on retina, use image that's scaled by 2 */
@@ -1417,17 +1567,17 @@ body {
 
 .block11-slide4 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/11-4@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block12-slide1 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/12-1@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block12-slide3 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/12-3@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
 }
 
 .block12-popup { /* on retina, use image that's scaled by 2 */
@@ -1437,7 +1587,107 @@ body {
 
 .block12-slide4 { /* on retina, use image that's scaled by 2 */
 	background-image: url(../img/12-4@2x.jpg);
-	background-size: 300px 200px;
+	background-size: 220px 313px;
+}
+
+.block13-slide1 { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/13-1@2x.jpg);
+	background-size: 220px 313px;
+}
+
+.block13-slide3 { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/13-3@2x.jpg);
+	background-size: 220px 313px;
+}
+
+.block13-popup { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/13-popup@2x.jpg);
+	background-size: 640px 480px;
+}
+
+.block13-slide4 { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/13-4@2x.jpg);
+	background-size: 220px 313px;
+}
+
+.block14-slide1 { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/14-1@2x.jpg);
+	background-size: 220px 313px;
+}
+
+.block14-slide3 { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/14-3@2x.jpg);
+	background-size: 220px 313px;
+}
+
+.block14-popup { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/14-popup@2x.jpg);
+	background-size: 640px 480px;
+}
+
+.block14-slide4 { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/14-4@2x.jpg);
+	background-size: 220px 313px;
+}
+
+.block15-slide1 { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/15-1@2x.jpg);
+	background-size: 220px 313px;
+}
+
+.block15-slide3 { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/15-3@2x.jpg);
+	background-size: 220px 313px;
+}
+
+.block15-popup { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/15-popup@2x.jpg);
+	background-size: 640px 480px;
+}
+
+.block15-slide4 { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/15-4@2x.jpg);
+	background-size: 220px 313px;
+}
+
+.block16-slide1 { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/16-1@2x.jpg);
+	background-size: 220px 313px;
+}
+
+.block16-slide3 { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/16-3@2x.jpg);
+	background-size: 220px 313px;
+}
+
+.block16-popup { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/16-popup@2x.jpg);
+	background-size: 640px 480px;
+}
+
+.block16-slide4 { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/16-4@2x.jpg);
+	background-size: 220px 313px;
+}
+
+.block17-slide1 { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/17-1@2x.jpg);
+	background-size: 220px 313px;
+}
+
+.block17-slide3 { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/17-3@2x.jpg);
+	background-size: 220px 313px;
+}
+
+.block17-popup { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/17-popup@2x.jpg);
+	background-size: 640px 480px;
+}
+
+.block17-slide4 { /* on retina, use image that's scaled by 2 */
+	background-image: url(../img/17-4@2x.jpg);
+	background-size: 220px 313px;
 }
 
 }
@@ -1451,7 +1701,7 @@ body {
 }
 
 .page-content {
-	padding: 0 0 102px;
+	padding: 0 0 160px;
 }
 
 .container {
@@ -1468,17 +1718,17 @@ body {
 }
 
 .page-footer .copyright {
-	padding: 20px 0 20px 10px;
+	padding: 10px 0 20px 10px;
 }
 
 .filter {
-	margin: 0 0 25px .3%;
+	margin: 0 0 25px 3%;
 }
 
 .filter__list {
-	-webkit-justify-content: flex-start;
-	-ms-flex-pack: start;
-	justify-content: flex-start;
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
 }
 
 .filter__item {
@@ -1523,10 +1773,16 @@ body {
 	width: 1000px;
 }
 
+.filter__list {
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+
 .promo {
 	display: block;
-	height: 420px;
-	width: 620px;
+	height: 646px;
+	width: 460px;
 	margin: 0 0 20px;
 }
 
@@ -1535,7 +1791,7 @@ body {
 @media (min-width: 1260px) {
 
 .container {
-	min-width: 1262px;
+	min-width: 1260px;
 	width: auto;
 }
 

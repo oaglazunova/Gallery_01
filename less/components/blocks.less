@@ -5,21 +5,19 @@
     content: '';
     display: block;
     clear: both;
-  }  
+  }
   &__item {
-    height: 200px;
-    width: 300px;
+    height: @block-height;
+    width: @block-width;
     margin: 0 0 20px;
     background: @bkg-accent;
     float: left;
     position: relative;
     overflow: hidden;
     opacity: 1;
+    border: 1px solid @bkg-accent;
     & .header--h3 {
-      position: absolute;
-      z-index: 10;
-      bottom: 20px;
-      left: 20px;
+      margin: 0 0 30px;
     }
     & ul {
       position: relative;
@@ -37,18 +35,21 @@
     & .slider-arrow {
       margin: 0 0 0 9px;
       cursor: pointer;
+      &--prev {
+        margin: 0 115px 0 0;
+      }
       & svg {
-        fill: rgba(255, 255, 255, 1);
+        fill: #fff;
         &:hover {
-          fill: rgba(255, 255, 255, 1);
+          fill: @bkg-accent;
         }
       }
     }
   }
   &__slide {
     display: block;
-    height: 200px;
-    width: 300px;
+    height: @block-height;
+    width: @block-width;
     margin: 0 auto;
     position: relative;
     float: left;
@@ -56,7 +57,7 @@
     background-position: center;
     &--1 {
       text-align: center;
-      line-height: 200px;
+      line-height: @block-height;
       z-index: 11;
       .header--h2 {
         text-align: center;
@@ -71,13 +72,12 @@
       z-index: 9;
       & .text {
         color: @text-db--slide;
-        // line-height: 2.2rem;
       }
     }
     &--3,
     &--4 {
       text-align: center;
-      line-height: 200px;
+      line-height: @block-height;
     }
   }
   &__btn {
@@ -90,6 +90,9 @@
     @media(min-width: @screen--small) {
       fill: #fff;
     }
+    &:hover {
+      fill: @bkg-accent;
+    }
   }
 }
 
@@ -97,9 +100,7 @@
   transform: scale(.8);
   opacity: .2;
   transition: all .5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
-  
-  @media(min-width: @screen--small) {
-    }
+  @media(min-width: @screen--small) {}
   & .blocks__slider-controls, & .blocks__btn {
     pointer-events: none;
     cursor: auto;
@@ -119,7 +120,9 @@
   background: @bkg-slide;
   opacity: 1;
   transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
-  & .blocks__slider-controls, & .blocks__zoom, & .blocks__play {
+  & .blocks__slider-controls,
+  & .blocks__zoom,
+  & .blocks__play {
     pointer-events: all;
     cursor: pointer;
   }
