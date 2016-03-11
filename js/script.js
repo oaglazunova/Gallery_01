@@ -46,7 +46,7 @@ function populateMovies(movies) {
     $(template).find(".js-btn-vid").attr("id", "btn-vid" + i);
     $(template).find(".js-popup-vid").attr("id", "popup-btn-vid" + i);
 
-    $(template).find(".js-video").attr("src", movieTrailer + "&enablejsapi=1");
+    $(template).find(".js-video").attr("src", movieTrailer + "?version=3&enablejsapi=1");
     $(template).find(".js-video").attr("id", "vid" + i);
   }
 }
