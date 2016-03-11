@@ -1,429 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
-  <title>Киноновинки</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Новинки кино - что идёт сегодня в кинотеатрах. Новые трейлеры, ожидаемые фильмы. Январь 2016">
-  <!-- Schema.org markup for Google+ -->
-  <meta itemprop="name" content="Киноновинки">
-  <meta itemprop="description" content="Новинки кино - что идёт сегодня в кинотеатрах. Новые трейлеры, ожидаемые фильмы. Январь 2016">
-  <meta itemprop="image" content="http://kinonovinki.net/img/share-img.jpg">
-  <!-- Twitter Card data -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@publisher_handle">
-  <meta name="twitter:title" content="Киноновинки">
-  <meta name="twitter:description" content="Новинки кино - что идёт сегодня в кинотеатрах. Новые трейлеры, ожидаемые фильмы. Январь 2016">
-  <meta name="twitter:creator" content="@author_handle">
-  <meta name="twitter:image:src" content="http://kinonovinki.net/img/share-twitter.jpg">
-  <!-- Open Graph data -->
-  <meta property="og:title" content="Киноновинки" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="http://kinonovinki.net/" />
-  <meta property="og:image" content="http://kinonovinki.net/img/share-img.jpg" />
-  <meta property="og:description" content="Новинки кино - что идёт сегодня в кинотеатрах. Новые трейлеры, ожидаемые фильмы. Январь 2016" />
-  <meta property="og:site_name" content="Киноновинки" />
+	<title>Киноновинки</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Новинки кино - что идёт сегодня в кинотеатрах. Новые трейлеры, ожидаемые фильмы. Январь 2016">
+	<!-- Schema.org markup for Google+ -->
+	<meta itemprop="name" content="Киноновинки">
+	<meta itemprop="description" content="Новинки кино - что идёт сегодня в кинотеатрах. Новые трейлеры, ожидаемые фильмы. Январь 2016">
+	<meta itemprop="image" content="http://kinonovinki.net/img/share-img.jpg">
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@publisher_handle">
+	<meta name="twitter:title" content="Киноновинки">
+	<meta name="twitter:description" content="Новинки кино - что идёт сегодня в кинотеатрах. Новые трейлеры, ожидаемые фильмы. Январь 2016">
+	<meta name="twitter:creator" content="@author_handle">
+	<meta name="twitter:image:src" content="http://kinonovinki.net/img/share-twitter.jpg">
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Киноновинки" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://kinonovinki.net/" />
+	<meta property="og:image" content="http://kinonovinki.net/img/share-img.jpg" />
+	<meta property="og:description" content="Новинки кино - что идёт сегодня в кинотеатрах. Новые трейлеры, ожидаемые фильмы. Январь 2016" />
+	<meta property="og:site_name" content="Киноновинки" />
 
-  <link rel="stylesheet" href="css/style.css">
-  <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&amp;subset=cyrillic,latin" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&amp;subset=cyrillic,latin" rel="stylesheet" type="text/css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 
 
 
 <body>
-  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
-    <symbol id="icon-logo">
-      <path d="M30.8,20.1c1,0.1,1.8-0.7,1.9-1.7s-0.7-1.8-1.6-1.9 c-1-0.1-1.8,0.7-1.9,1.7C29.1,19.2,29.8,20,30.8,20.1z M26,20.6c1.2,0.1,2.3-1.1,2.4-2.6c0.1-1.5-0.8-2.8-2-2.9 c-1.2-0.1-2.3,1.1-2.4,2.6C23.9,19.2,24.8,20.5,26,20.6z M34.3,22c0.9,0.1,1.6-0.6,1.7-1.5c0.1-0.9-0.6-1.6-1.5-1.7 c-0.9-0.1-1.6,0.6-1.7,1.5C32.8,21.1,33.5,21.9,34.3,22z M37.1,24.2c0.8,0.1,1.4-0.5,1.5-1.3c0.1-0.8-0.5-1.4-1.3-1.5 c-0.8-0.1-1.4,0.5-1.5,1.3C35.8,23.4,36.4,24.1,37.1,24.2z M38.9,24.7c-0.7,0-1.2,0.4-1.3,1.1c0,0.7,0.4,1.2,1.1,1.3 c0.7,0,1.2-0.4,1.3-1.1S39.5,24.7,38.9,24.7z M28.2,21.9C28.2,21.9,28.3,21.9,28.2,21.9C28.2,21.9,28.2,21.9,28.2,21.9z M28.2,21.9c-2.2-0.2-3.5,0.9-3.6,2.8c-0.1,1.5,0.2,3.1,1.5,4.7c1.7,2,4.6,4.1,4.4,6.8c-0.1,1.5-0.5,4.3-2.7,6.3 c-2.8,2.5-4.4,4.8-4.6,7.4c-0.2,2.6,1.4,4.9,4.4,5.1c3,0.2,4.9-1.8,5.1-5.2c0.2-3.4,0.3-6.6,2.1-9.9c1.7-3.3,2.6-4.8,3.1-5.9 c0.5-1.1,0.5-1.9,0.6-2.6c0.2-2.3-1.4-4.1-2.3-5.1C33.7,23.5,31.2,22.1,28.2,21.9z M9.5,4.8c1,0,1.8-0.8,1.8-1.8 c0-1-0.8-1.8-1.8-1.8C8.5,1.2,7.8,2,7.8,3C7.8,4,8.6,4.8,9.5,4.8z M14.3,0c-1.2,0-2.2,1.3-2.2,2.8c0,1.5,1,2.8,2.2,2.8 c1.2,0,2.2-1.3,2.2-2.8C16.5,1.3,15.5,0,14.3,0z M5.9,6.4c0.9,0,1.6-0.7,1.6-1.6S6.8,3.2,5.9,3.2C5,3.2,4.3,3.9,4.3,4.8 C4.3,5.7,5,6.4,5.9,6.4z M2.9,8.4c0.8,0,1.4-0.6,1.4-1.4c0-0.8-0.6-1.4-1.4-1.4C2.2,5.6,1.6,6.2,1.6,7C1.6,7.8,2.2,8.4,2.9,8.4z M2.4,10c0-0.7-0.5-1.2-1.2-1.2C0.5,8.8,0,9.3,0,10c0,0.7,0.5,1.2,1.2,1.2C1.8,11.2,2.4,10.7,2.4,10z M13.5,14.4 c1.5-1.5,1.9-3,1.9-4.6c0-1.9-1.1-3-3.4-3c-3,0-5.6,1.2-8.3,3.8c-0.9,1-2.6,2.7-2.6,4.9c0,0.8,0,1.5,0.4,2.7 c0.4,1.1,1.1,2.7,2.6,6.1c1.5,3.4,1.4,6.6,1.4,10c0,3.4,1.7,5.6,4.7,5.5c3,0,4.7-2.1,4.7-4.8c0-2.7-1.4-5.1-4.1-7.7 c-2.1-2.1-2.3-4.9-2.3-6.4C8.7,18.2,11.7,16.3,13.5,14.4z M11.8,6.8C11.6,6.8,11.7,6.8,11.8,6.8L11.8,6.8z M12,6.8 c0,0-0.1,0-0.2,0C11.9,6.8,11.9,6.8,12,6.8z"></path>
-    </symbol>
-    <symbol id="icon-cp-logo">
-      <path d="M 18.96 14.19C 19.15 14.33 19.32 14.4 19.48 14.43 19.48 14.43 20.16 17.32 20.16 17.32 20.16 17.32 22 14.7 22 14.7 22 14.7 21.62 14.48 21.62 14.48 21.62 14.48 21.55 14.44 21.55 14.44 21.9 13.58 22.17 12.69 21.91 12.33 21.59 11.89 20.3 10.56 20.2 10.46 19.74 9.96 19.11 10.17 18.77 10.63 18.62 10.85 18.43 11.05 18.32 11.26 18.32 11.26 17.31 13.03 18.96 14.19ZM 4.25 32.32C 3.7 31.21 4.56 29.41 4.59 29.41 4.68 29.43 4.83 29.46 4.83 29.46 4.83 29.46 4.98 29.87 4.98 29.87 4.98 29.87 5.03 29.87 5.07 29.88 7.63 30.36 10.52 30.24 11.08 29.84 12.45 28.85 13.81 26.32 14.23 25.07 14.23 25.07 16.84 23.55 18.9 23.78 20.41 23.95 21.02 25.26 21.02 27.18 21.11 27.18 21.66 27.23 21.66 27.23 21.66 27.23 21.61 27.45 21.61 27.55 21.6 27.64 21.37 27.89 21.39 27.98 21.56 28.72 21.91 29.55 22.7 29.91 25.4 29.26 28 26.73 28 26.73 28 26.73 26.98 25.85 26.98 25.85 26.19 26.5 24.95 27.05 24.14 27.14 24.14 27.14 24.93 21.17 24.08 20.37 23.03 19.38 21.1 18.93 20.19 19.06 20.19 19.06 21.16 21.77 21.16 21.77 21.16 21.77 9.83 24.52 9.83 24.52 9.83 24.52 9.19 22.86 9 22.3 9.02 23.67 8.09 25.85 7.71 26.28 6.76 27.38 5.07 27.39 3.95 27.14 3.95 27.14 2.95 26.89 2.95 26.89 2.95 26.89 2.09 28.07 1.78 28.75 0.41 31.81 3.08 33 3.08 33 3.08 33 25.51 33 25.51 33 25.04 32.83 24.52 32.68 23.96 32.56 19.46 31.06 9.33 31.13 4.25 32.32ZM 7.01 20.97C 7.06 20.97 9.35 20.85 9.95 20.3 9.96 20.3 10.97 18.56 10.05 17.89 9.76 17.66 9.34 17.74 7.96 17.8 6.58 17.86 6.1 17.64 6.1 17.64 6.1 17.64 7.2 16.82 7.2 16.82 7.2 16.82 6.28 13.15 6.28 13.15 6.28 13.15 15.9 10.94 15.9 10.94 15.9 10.94 15.92 10.93 15.92 10.93 14.75 9.87 12.99 9.06 10.11 9.36 10.11 9.36 9.52 8.81 9.52 8.81 9.86 8.63 10.03 8.61 10.33 8.32 9.41 6.47 8.99 4.45 8.97 3.35 9.64 3.16 12.3 2.92 12.85 0 12.85 0 10.96 1.3 9.48 0.56 6.99-0.7 5.26 1.6 5.26 1.6 5.26 1.6 3.58 1.68 3.62 2.68 3.74 5.67 4.72 7.86 6.6 10.41 4.31 11.42 3.18 12.4 2.11 13.95 0.69 16.01-0 18.75-0 18.75-0 18.75 2 21.13 6.65 21.63 6.74 21.26 6.93 21.17 7.01 20.97Z"></path>
-    </symbol>
-    <symbol id="icon-zoom">
-      <path d="M20,15c-2.8,0-5,2.3-5,5c0,2.8,2.3,5,5,5c2.8,0,5-2.3,5-5 C25,17.2,22.8,15,20,15z M21,0C9.4,0,0,9.4,0,21c0,11.6,9.4,21,21,21c11.6,0,21-9.4,21-21C42,9.4,32.6,0,21,0z M30,30h-1.6 l-4.3-4.2c-1.2,0.8-2.6,1.3-4.1,1.3c-3.9,0-7-3.1-7-7c0-3.9,3.1-7,7-7c3.9,0,7,3.1,7,7c0,1.5-0.5,2.9-1.3,4.1l4.3,4.2V30z"></path>
-    </symbol>
-    <symbol id="icon-next">
-      <path d="M10.5,0C4.7,0,0,4.7,0,10.5S4.7,21,10.5,21s10.5-4.7,10.5-10.5S16.2,0,10.5,0z M10.2,15l-1.9-0.3l3.5-4.3
+	<svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+		<symbol id="icon-logo">
+			<path d="M30.8,20.1c1,0.1,1.8-0.7,1.9-1.7s-0.7-1.8-1.6-1.9 c-1-0.1-1.8,0.7-1.9,1.7C29.1,19.2,29.8,20,30.8,20.1z M26,20.6c1.2,0.1,2.3-1.1,2.4-2.6c0.1-1.5-0.8-2.8-2-2.9 c-1.2-0.1-2.3,1.1-2.4,2.6C23.9,19.2,24.8,20.5,26,20.6z M34.3,22c0.9,0.1,1.6-0.6,1.7-1.5c0.1-0.9-0.6-1.6-1.5-1.7 c-0.9-0.1-1.6,0.6-1.7,1.5C32.8,21.1,33.5,21.9,34.3,22z M37.1,24.2c0.8,0.1,1.4-0.5,1.5-1.3c0.1-0.8-0.5-1.4-1.3-1.5 c-0.8-0.1-1.4,0.5-1.5,1.3C35.8,23.4,36.4,24.1,37.1,24.2z M38.9,24.7c-0.7,0-1.2,0.4-1.3,1.1c0,0.7,0.4,1.2,1.1,1.3 c0.7,0,1.2-0.4,1.3-1.1S39.5,24.7,38.9,24.7z M28.2,21.9C28.2,21.9,28.3,21.9,28.2,21.9C28.2,21.9,28.2,21.9,28.2,21.9z M28.2,21.9c-2.2-0.2-3.5,0.9-3.6,2.8c-0.1,1.5,0.2,3.1,1.5,4.7c1.7,2,4.6,4.1,4.4,6.8c-0.1,1.5-0.5,4.3-2.7,6.3 c-2.8,2.5-4.4,4.8-4.6,7.4c-0.2,2.6,1.4,4.9,4.4,5.1c3,0.2,4.9-1.8,5.1-5.2c0.2-3.4,0.3-6.6,2.1-9.9c1.7-3.3,2.6-4.8,3.1-5.9 c0.5-1.1,0.5-1.9,0.6-2.6c0.2-2.3-1.4-4.1-2.3-5.1C33.7,23.5,31.2,22.1,28.2,21.9z M9.5,4.8c1,0,1.8-0.8,1.8-1.8 c0-1-0.8-1.8-1.8-1.8C8.5,1.2,7.8,2,7.8,3C7.8,4,8.6,4.8,9.5,4.8z M14.3,0c-1.2,0-2.2,1.3-2.2,2.8c0,1.5,1,2.8,2.2,2.8 c1.2,0,2.2-1.3,2.2-2.8C16.5,1.3,15.5,0,14.3,0z M5.9,6.4c0.9,0,1.6-0.7,1.6-1.6S6.8,3.2,5.9,3.2C5,3.2,4.3,3.9,4.3,4.8 C4.3,5.7,5,6.4,5.9,6.4z M2.9,8.4c0.8,0,1.4-0.6,1.4-1.4c0-0.8-0.6-1.4-1.4-1.4C2.2,5.6,1.6,6.2,1.6,7C1.6,7.8,2.2,8.4,2.9,8.4z M2.4,10c0-0.7-0.5-1.2-1.2-1.2C0.5,8.8,0,9.3,0,10c0,0.7,0.5,1.2,1.2,1.2C1.8,11.2,2.4,10.7,2.4,10z M13.5,14.4 c1.5-1.5,1.9-3,1.9-4.6c0-1.9-1.1-3-3.4-3c-3,0-5.6,1.2-8.3,3.8c-0.9,1-2.6,2.7-2.6,4.9c0,0.8,0,1.5,0.4,2.7 c0.4,1.1,1.1,2.7,2.6,6.1c1.5,3.4,1.4,6.6,1.4,10c0,3.4,1.7,5.6,4.7,5.5c3,0,4.7-2.1,4.7-4.8c0-2.7-1.4-5.1-4.1-7.7 c-2.1-2.1-2.3-4.9-2.3-6.4C8.7,18.2,11.7,16.3,13.5,14.4z M11.8,6.8C11.6,6.8,11.7,6.8,11.8,6.8L11.8,6.8z M12,6.8 c0,0-0.1,0-0.2,0C11.9,6.8,11.9,6.8,12,6.8z"></path>
+		</symbol>
+		<symbol id="icon-cp-logo">
+			<path d="M 18.96 14.19C 19.15 14.33 19.32 14.4 19.48 14.43 19.48 14.43 20.16 17.32 20.16 17.32 20.16 17.32 22 14.7 22 14.7 22 14.7 21.62 14.48 21.62 14.48 21.62 14.48 21.55 14.44 21.55 14.44 21.9 13.58 22.17 12.69 21.91 12.33 21.59 11.89 20.3 10.56 20.2 10.46 19.74 9.96 19.11 10.17 18.77 10.63 18.62 10.85 18.43 11.05 18.32 11.26 18.32 11.26 17.31 13.03 18.96 14.19ZM 4.25 32.32C 3.7 31.21 4.56 29.41 4.59 29.41 4.68 29.43 4.83 29.46 4.83 29.46 4.83 29.46 4.98 29.87 4.98 29.87 4.98 29.87 5.03 29.87 5.07 29.88 7.63 30.36 10.52 30.24 11.08 29.84 12.45 28.85 13.81 26.32 14.23 25.07 14.23 25.07 16.84 23.55 18.9 23.78 20.41 23.95 21.02 25.26 21.02 27.18 21.11 27.18 21.66 27.23 21.66 27.23 21.66 27.23 21.61 27.45 21.61 27.55 21.6 27.64 21.37 27.89 21.39 27.98 21.56 28.72 21.91 29.55 22.7 29.91 25.4 29.26 28 26.73 28 26.73 28 26.73 26.98 25.85 26.98 25.85 26.19 26.5 24.95 27.05 24.14 27.14 24.14 27.14 24.93 21.17 24.08 20.37 23.03 19.38 21.1 18.93 20.19 19.06 20.19 19.06 21.16 21.77 21.16 21.77 21.16 21.77 9.83 24.52 9.83 24.52 9.83 24.52 9.19 22.86 9 22.3 9.02 23.67 8.09 25.85 7.71 26.28 6.76 27.38 5.07 27.39 3.95 27.14 3.95 27.14 2.95 26.89 2.95 26.89 2.95 26.89 2.09 28.07 1.78 28.75 0.41 31.81 3.08 33 3.08 33 3.08 33 25.51 33 25.51 33 25.04 32.83 24.52 32.68 23.96 32.56 19.46 31.06 9.33 31.13 4.25 32.32ZM 7.01 20.97C 7.06 20.97 9.35 20.85 9.95 20.3 9.96 20.3 10.97 18.56 10.05 17.89 9.76 17.66 9.34 17.74 7.96 17.8 6.58 17.86 6.1 17.64 6.1 17.64 6.1 17.64 7.2 16.82 7.2 16.82 7.2 16.82 6.28 13.15 6.28 13.15 6.28 13.15 15.9 10.94 15.9 10.94 15.9 10.94 15.92 10.93 15.92 10.93 14.75 9.87 12.99 9.06 10.11 9.36 10.11 9.36 9.52 8.81 9.52 8.81 9.86 8.63 10.03 8.61 10.33 8.32 9.41 6.47 8.99 4.45 8.97 3.35 9.64 3.16 12.3 2.92 12.85 0 12.85 0 10.96 1.3 9.48 0.56 6.99-0.7 5.26 1.6 5.26 1.6 5.26 1.6 3.58 1.68 3.62 2.68 3.74 5.67 4.72 7.86 6.6 10.41 4.31 11.42 3.18 12.4 2.11 13.95 0.69 16.01-0 18.75-0 18.75-0 18.75 2 21.13 6.65 21.63 6.74 21.26 6.93 21.17 7.01 20.97Z"></path>
+		</symbol>
+		<symbol id="icon-zoom">
+			<path d="M20,15c-2.8,0-5,2.3-5,5c0,2.8,2.3,5,5,5c2.8,0,5-2.3,5-5 C25,17.2,22.8,15,20,15z M21,0C9.4,0,0,9.4,0,21c0,11.6,9.4,21,21,21c11.6,0,21-9.4,21-21C42,9.4,32.6,0,21,0z M30,30h-1.6 l-4.3-4.2c-1.2,0.8-2.6,1.3-4.1,1.3c-3.9,0-7-3.1-7-7c0-3.9,3.1-7,7-7c3.9,0,7,3.1,7,7c0,1.5-0.5,2.9-1.3,4.1l4.3,4.2V30z"></path>
+		</symbol>
+		<symbol id="icon-next">
+			<path d="M10.5,0C4.7,0,0,4.7,0,10.5S4.7,21,10.5,21s10.5-4.7,10.5-10.5S16.2,0,10.5,0z M10.2,15l-1.9-0.3l3.5-4.3
 	L8.1,6.1l1.9-0.3l3.8,4.6L10.2,15z"></path>
-    </symbol>
-    <symbol id="icon-prev">
-      <path d="M0,10.5C0,16.3,4.7,21,10.5,21s10.5-4.7,10.5-10.5S16.3,0,10.5,0C4.7,0,0,4.7,0,10.5z M7,10.4l3.8-4.6
+		</symbol>
+		<symbol id="icon-prev">
+			<path d="M0,10.5C0,16.3,4.7,21,10.5,21s10.5-4.7,10.5-10.5S16.3,0,10.5,0C4.7,0,0,4.7,0,10.5z M7,10.4l3.8-4.6
 	l1.9,0.3l-3.6,4.4l3.5,4.3L10.8,15L7,10.4z"></path>
-    </symbol>
-    <symbol id="icon-close">
-      <path d="M14,0C6.3,0,0,6.3,0,14c0,7.7,6.3,14,14,14c7.7,0,14-6.3,14-14 C28,6.3,21.7,0,14,0z M20.1,18.5l-0.3,1.3l-1.3,0.3L14,15.6l-4.4,4.5l-1.4-0.3l-0.3-1.3l4.5-4.5L8,9.5l0.2-1.3l1.4-0.3l4.5,4.4 l4.5-4.4l1.3,0.3l0.3,1.3L15.6,14L20.1,18.5z"></path>
-    </symbol>
-    <symbol id="icon-play">
-      <path d="M21,0C9.4,0,0,9.4,0,21s9.4,21,21,21s21-9.4,21-21S32.6,0,21,0z M17,29l0-15.9l12,8L17,29z"></path>
-    </symbol>
-  </svg>
-
-  <noscript>
-    <div class="alert">
-      <p>
-        Для просмотра этого сайта необходимо включить в браузере поддержку JavaScript.
-        <br>
-      </p>
-    </div>
-  </noscript>
-
-
-
-  <header class="page-header">
-    <div class="container">
-    </div>
-  </header>
-
-
-
-  <div class="page-content">
-    <div class="container">   
-    
-
-
-      <nav class="filter">
-        <ul class="filter__list">
-          <li class="filter__item  filter__item--active  js-show-all">Все фильмы</li>
-          <li class="filter__item  js-filter1">Комедии</li>
-          <li class="filter__item  js-filter2">Боевики</li>
-          <li class="filter__item  js-filter3">Фантастика</li>
-          <li class="filter__item  js-filter8">Ужасы</li>
-          <li class="filter__item  js-filter4">Мультфильмы</li>
-          <li class="filter__item  js-filter7">Драмы</li>
-          <li class="filter__item  js-filter5">Приключения</li>
-          <li class="filter__item  js-filter6">Триллеры</li>
-        </ul>
-      </nav>
-      
-      
-
-      <div class="popups">
-
-        <div id="popup-btn01" class="popups__window">
-          <div data-attr="block1-popup" class="popups__pict  js-lazy">
-            <span class="popups__close-pict"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-          </div>
-        </div>
-
-        <div id="popup-btn02" class="popups__window">
-          <div data-attr="block2-popup" class="popups__pict  js-lazy">
-            <span class="popups__close-pict"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-          </div>
-        </div>
-
-        <div id="popup-btn03" class="popups__window">
-          <div data-attr="block3-popup" class="popups__pict  js-lazy">
-            <span class="popups__close-pict"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-          </div>
-        </div>
-
-        <div id="popup-btn04" class="popups__window">
-          <div data-attr="block4-popup" class="popups__pict  js-lazy">
-            <span class="popups__close-pict"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-          </div>
-        </div>
-
-        <div id="popup-btn05" class="popups__window">
-          <div data-attr="block5-popup" class="popups__pict  js-lazy">
-            <span class="popups__close-pict"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-          </div>
-        </div>
-
-        <div id="popup-btn06" class="popups__window">
-          <div data-attr="block6-popup" class="popups__pict  js-lazy">
-            <span class="popups__close-pict"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-          </div>
-        </div>
-
-        <div id="popup-btn07" class="popups__window">
-          <div data-attr="block7-popup" class="popups__pict  js-lazy">
-            <span class="popups__close-pict"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-          </div>
-        </div>
-
-        <div id="popup-btn08" class="popups__window">
-          <div data-attr="block8-popup" class="popups__pict  js-lazy">
-            <span class="popups__close-pict"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-          </div>
-        </div>
-
-        <div id="popup-btn09" class="popups__window">
-          <div data-attr="block9-popup" class="popups__pict  js-lazy">
-            <span class="popups__close-pict"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-          </div>
-        </div>
-
-        <div id="popup-btn10" class="popups__window">
-          <div data-attr="block10-popup" class="popups__pict  js-lazy">
-            <span class="popups__close-pict"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-          </div>
-        </div>
-
-        <div id="popup-btn11" class="popups__window">
-          <div data-attr="block11-popup" class="popups__pict  js-lazy">
-            <span class="popups__close-pict"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-          </div>
-        </div>
-
-        <div id="popup-btn12" class="popups__window">
-          <div data-attr="block12-popup" class="popups__pict  js-lazy">
-            <span class="popups__close-pict"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-          </div>
-        </div>
-
-        <div id="popup-btn13" class="popups__window">
-          <div data-attr="block13-popup" class="popups__pict  js-lazy">
-            <span class="popups__close-pict"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-          </div>
-        </div>
-
-        <div id="popup-btn14" class="popups__window">
-          <div data-attr="block14-popup" class="popups__pict  js-lazy">
-            <span class="popups__close-pict"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-          </div>
-        </div>
-
-        <div id="popup-btn15" class="popups__window">
-          <div data-attr="block15-popup" class="popups__pict  js-lazy">
-            <span class="popups__close-pict"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-          </div>
-        </div>
-
-        <div id="popup-btn16" class="popups__window">
-          <div data-attr="block16-popup" class="popups__pict  js-lazy">
-            <span class="popups__close-pict"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-          </div>
-        </div>
-
-        <div id="popup-btn17" class="popups__window">
-          <div data-attr="block17-popup" class="popups__pict  js-lazy">
-            <span class="popups__close-pict"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-          </div>
-        </div>
-
-
-        <div id="popup-btn-vid01" class="popups__window">
-          <div class="popups__vid">
-            <span class="popups__close-vid"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-            <iframe id="vid01" class="js-video" width="640" height="360" src="https://www.youtube.com/embed/4oRtSP3SJYk?enablejsapi=1"></iframe>
-          </div>
-        </div>
-
-        <div id="popup-btn-vid02" class="popups__window">
-          <div class="popups__vid">
-            <span class="popups__close-vid"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-            <iframe id="vid02" class="js-video" width="640" height="360" src="https://www.youtube.com/embed/Nu_FG63jbJ0?enablejsapi=1"></iframe>
-          </div>
-        </div>
-
-        <div id="popup-btn-vid03" class="popups__window">
-          <div class="popups__vid">
-            <span class="popups__close-vid"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-            <iframe id="vid03" class="js-video" width="640" height="360" src="https://www.youtube.com/embed/3hy8c-3aAUg?enablejsapi=1"></iframe>
-          </div>
-        </div>
-
-        <div id="popup-btn-vid04" class="popups__window">
-          <div class="popups__vid">
-            <span class="popups__close-vid"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-            <iframe id="vid04" class="js-video" width="640" height="360" src="https://www.youtube.com/embed/hCkshYu3TlQ?enablejsapi=1"></iframe>
-          </div>
-        </div>
-
-        <div id="popup-btn-vid05" class="popups__window">
-          <div class="popups__vid">
-            <span class="popups__close-vid"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-            <iframe id="vid05" class="js-video" width="640" height="360" src="https://www.youtube.com/embed/DKoV01A2gSA?enablejsapi=1"></iframe>
-          </div>
-        </div>
-
-        <div id="popup-btn-vid06" class="popups__window">
-          <div class="popups__vid">
-            <span class="popups__close-vid"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-            <iframe id="vid06" class="js-video" width="640" height="360" src="https://www.youtube.com/embed/T94dW0tpSmg?enablejsapi=1"></iframe>
-          </div>
-        </div>
-
-        <div id="popup-btn-vid07" class="popups__window">
-          <div class="popups__vid">
-            <span class="popups__close-vid"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-            <iframe id="vid07" class="js-video" width="640" height="360" src="https://www.youtube.com/embed/YYoMFIggDxc?enablejsapi=1"></iframe>
-          </div>
-        </div>
-
-        <div id="popup-btn-vid08" class="popups__window">
-          <div class="popups__vid">
-            <span class="popups__close-vid"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-            <iframe id="vid08" class="js-video" width="640" height="360" src="https://www.youtube.com/embed/e9HF1Pl5Pg0?enablejsapi=1"></iframe>
-          </div>
-        </div>
-
-        <div id="popup-btn-vid09" class="popups__window">
-          <div class="popups__vid">
-            <span class="popups__close-vid"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-            <iframe id="vid09" class="js-video" width="640" height="360" src="https://www.youtube.com/embed/vec4wfoW7jM?enablejsapi=1"></iframe>
-          </div>
-        </div>
-
-        <div id="popup-btn-vid10" class="popups__window">
-          <div class="popups__vid">
-            <span class="popups__close-vid"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-            <iframe id="vid10" class="js-video" width="640" height="360" src="https://www.youtube.com/embed/PZfOlIc2ySA?enablejsapi=1"></iframe>
-          </div>
-        </div>
-
-        <div id="popup-btn-vid11" class="popups__window">
-          <div class="popups__vid">
-            <span class="popups__close-vid"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-            <iframe id="vid11" class="js-video" width="640" height="360" src="https://www.youtube.com/embed/3NURWoTPokI?enablejsapi=1"></iframe>
-          </div>
-        </div>
-
-        <div id="popup-btn-vid12" class="popups__window">
-          <div class="popups__vid">
-            <span class="popups__close-vid"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-            <iframe id="vid12" class="js-video" width="640" height="360" src="https://www.youtube.com/embed/8xF0dgmrPcw?enablejsapi=1"></iframe>
-          </div>
-        </div>
-
-        <div id="popup-btn-vid13" class="popups__window">
-          <div class="popups__vid">
-            <span class="popups__close-vid"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-            <iframe id="vid13" class="js-video" width="640" height="360" src="https://www.youtube.com/embed/WdC5zKX_1K4?enablejsapi=1"></iframe>
-          </div>
-        </div>
-
-        <div id="popup-btn-vid14" class="popups__window">
-          <div class="popups__vid">
-            <span class="popups__close-vid"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-            <iframe id="vid14" class="js-video" width="640" height="360" src="https://www.youtube.com/embed/l_Ac610Z0sg?enablejsapi=1"></iframe>
-          </div>
-        </div>
-
-        <div id="popup-btn-vid15" class="popups__window">
-          <div class="popups__vid">
-            <span class="popups__close-vid"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-            <iframe id="vid15" class="js-video" width="640" height="360" src="https://www.youtube.com/embed/hNg3anMf6nM?enablejsapi=1"></iframe>
-          </div>
-        </div>
-
-        <div id="popup-btn-vid16" class="popups__window">
-          <div class="popups__vid">
-            <span class="popups__close-vid"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-            <iframe id="vid16" class="js-video" width="640" height="360" src="https://www.youtube.com/embed/toVeOU9sXRQ?enablejsapi=1"></iframe>
-          </div>
-        </div>
-
-        <div id="popup-btn-vid17" class="popups__window">
-          <div class="popups__vid">
-            <span class="popups__close-vid"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
-            <iframe id="vid17" class="js-video" width="640" height="360" src="https://www.youtube.com/embed/fITmdjxgEjM?enablejsapi=1"></iframe>
-          </div>
-        </div>
-
-      </div>
-      
-
-
-      <div class="blocks  js-grid">
-
-        <div class="blocks__item  js-grid-item  js-filter-not1  js-filter-not4  js-filter-not5  js-filter-not6  js-filter-not7  js-filter-not8">
-          <ul>
-            <li data-attr="block1-slide1" class="blocks__slide  blocks__slide--1  js-lazy">
-            </li>
-
-            <li class="blocks__slide  blocks__slide--2">
-              <h3 class="header--h3">Мафия: Игра на выживание</h3>
-              <p class="text">Страна: Россия</p>
-              <p class="text">Жанр: фантастика, боевик</p>
-              <p class="text">Время: 91 мин. / 01:31</p>
-            </li>
-
-            <li data-attr="block1-slide3" class="blocks__slide  blocks__slide--3  js-lazy">
-              <span id="btn01" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use></svg></span>
-            </li>
-
-            <li data-attr="block1-slide4" class="blocks__slide  blocks__slide--4  js-lazy">
-              <span id="btn-vid01" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use></svg></span>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div class="blocks__item  js-grid-item  js-filter-not1  js-filter-not4  js-filter-not2  js-filter-not3  js-filter-not8">
-          <ul>
-            <li data-attr="block2-slide1" class="blocks__slide  blocks__slide--1  js-lazy">
-            </li>
-
-            <li class="blocks__slide  blocks__slide--2">
-              <h3 class="header--h3">Выживший</h3>
-              <p class="text">Страна: США</p>
-              <p class="text">Жанр: триллер, драма, приключения</p>
-              <p class="text">Время: 156 мин. / 02:36</p>
-            </li>
-
-            <li data-attr="block2-slide3" class="blocks__slide  blocks__slide--3  js-lazy  js-slide-3">
-              <span id="btn02" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use></svg></span>
-            </li>
-
-            <li data-attr="block2-slide4" class="blocks__slide  blocks__slide--4  js-lazy">
-              <span id="btn-vid02" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use></svg></span>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div class="blocks__item  js-grid-item  js-filter-not3  js-filter-not2  js-filter-not4  js-filter-not8">
-          <ul>
-            <li data-attr="block3-slide1" class="blocks__slide  blocks__slide--1  js-lazy">
-            </li>
-
-            <li class="blocks__slide  blocks__slide--2">
-              <h3 class="header--h3">Омерзительная восьмерка</h3>
-              <p class="text">Страна: США</p>
-              <p class="text">Жанр: триллер, драма, комедия, детектив, вестерн</p>
-              <p class="text">Время: 182 мин. / 03:02</p>
-            </li>
-
-            <li data-attr="block3-slide3" class="blocks__slide  blocks__slide--3  js-lazy">
-              <span id="btn03" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use></svg></span>
-            </li>
-
-            <li data-attr="block3-slide4" class="blocks__slide  blocks__slide--4  js-lazy">
-              <span id="btn-vid03" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use></svg></span>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div class="blocks__item  js-grid-item  js-filter-not4  js-filter-not3  js-filter-not2  js-filter-not5  js-filter-not6  js-filter-not7  js-filter-not8">
-          <ul>
-            <li data-attr="block4-slide1" class="blocks__slide  blocks__slide--1  js-lazy">
-            </li>
-
-            <li class="blocks__slide  blocks__slide--2">
-              <h3 class="header--h3">Страна чудес</h3>
-              <p class="text">Страна: Россия</p>
-              <p class="text">Жанр: комедия</p>
-              <p class="text">Время: -</p>
-            </li>
-
-            <li data-attr="block4-slide3" class="blocks__slide  blocks__slide--3  js-lazy">
-              <span id="btn04" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use></svg></span>
-            </li>
-
-            <li data-attr="block4-slide4" class="blocks__slide  blocks__slide--4  js-lazy">
-              <span id="btn-vid04" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use></svg></span>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div class="promo  js-grid-item  js-lazy">
+		</symbol>
+		<symbol id="icon-close">
+			<path d="M14,0C6.3,0,0,6.3,0,14c0,7.7,6.3,14,14,14c7.7,0,14-6.3,14-14 C28,6.3,21.7,0,14,0z M20.1,18.5l-0.3,1.3l-1.3,0.3L14,15.6l-4.4,4.5l-1.4-0.3l-0.3-1.3l4.5-4.5L8,9.5l0.2-1.3l1.4-0.3l4.5,4.4 l4.5-4.4l1.3,0.3l0.3,1.3L15.6,14L20.1,18.5z"></path>
+		</symbol>
+		<symbol id="icon-play">
+			<path d="M21,0C9.4,0,0,9.4,0,21s9.4,21,21,21s21-9.4,21-21S32.6,0,21,0z M17,29l0-15.9l12,8L17,29z"></path>
+		</symbol>
+	</svg>
+
+	<noscript>
+		<div class="alert">
+			<p>
+				Для просмотра этого сайта необходимо включить в браузере поддержку JavaScript.
+				<br>
+			</p>
+		</div>
+	</noscript>
+
+
+
+	<header class="page-header">
+		<div class="container">		
+	<!--
+         	<div class="promo">
           <div class="promo__text-wrapper">
             <h2 class="header--h2bb">Самые ожидаемые фильмы 2016:</h2>
           </div>
@@ -434,386 +86,150 @@
             <img class="promo__slide" src="img/promo04.jpg" alt="">
             <img class="promo__slide" src="img/promo05.jpg" alt="">
           </div>
-        </div>
+        </div> 
+        -->        
+		</div>
+	</header>
+
+
+
+	<div class="page-content">
+		<div class="container">
+
 
 
-
-        <div class="blocks__item  js-grid-item  js-filter-not4  js-filter-not1  js-filter-not6  js-filter-not7  js-filter-not8">
-          <ul>
-            <li data-attr="block5-slide1" class="blocks__slide  blocks__slide--1  js-lazy">
-            </li>
-
-            <li class="blocks__slide  blocks__slide--2">
-              <h3 class="header--h3">Звёздные войны: Пробуждение силы</h3>
-              <p class="text">Страна: США</p>
-              <p class="text">Жанр: фантастика, фэнтези, боевик, приключения</p>
-              <p class="text">Время: 135 мин. / 02:15</p>
-            </li>
-
-            <li data-attr="block5-slide3" class="blocks__slide  blocks__slide--3  js-lazy">
-              <span id="btn05" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use></svg></span>
-            </li>
-
-            <li data-attr="block5-slide4" class="blocks__slide  blocks__slide--4  js-lazy">
-              <span id="btn-vid05" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use></svg></span>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div class="blocks__item  js-grid-item  js-filter-not4  js-filter-not3  js-filter-not2  js-filter-not5  js-filter-not6  js-filter-not7  js-filter-not8">
-          <ul>
-            <li data-attr="block6-slide1" class="blocks__slide  blocks__slide--1  js-lazy">
-            </li>
-
-            <li class="blocks__slide  blocks__slide--2">
-              <h3 class="header--h3">Здравствуй, папа, Новый год</h3>
-              <p class="text">Страна: США</p>
-              <p class="text">Жанр: комедия</p>
-              <p class="text">Время: 96 мин. / 01:36</p>
-            </li>
-
-            <li data-attr="block6-slide3" class="blocks__slide  blocks__slide--3  js-lazy">
-              <span id="btn06" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use></svg></span>
-            </li>
-
-            <li data-attr="block6-slide4" class="blocks__slide  blocks__slide--4  js-lazy">
-              <span id="btn-vid06" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use></svg></span>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div class="blocks__item  js-grid-item  js-filter-not4  js-filter-not2  js-filter-not3  js-filter-not5  js-filter-not6  js-filter-not7">
-          <ul>
-            <li data-attr="block7-slide1" class="blocks__slide  blocks__slide--1  js-lazy">
-            </li>
-
-            <li class="blocks__slide  blocks__slide--2">
-              <h3 class="header--h3">Крампус</h3>
-              <p class="text">Страна: США</p>
-              <p class="text">Жанр: ужасы, фэнтези, комедия</p>
-              <p class="text">Время: 98 мин. / 01:38</p>
-            </li>
-
-            <li data-attr="block7-slide3" class="blocks__slide  blocks__slide--3  js-lazy">
-              <span id="btn07" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use></svg></span>
-            </li>
-
-            <li data-attr="block7-slide4" class="blocks__slide  blocks__slide--4  js-lazy">
-              <span id="btn-vid07" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use></svg></span>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div class="blocks__item  js-grid-item  js-filter-not2  js-filter-not3  js-filter-not4  js-filter-not5  js-filter-not6  js-filter-not7  js-filter-not8">
-          <ul>
-            <li data-attr="block8-slide1" class="blocks__slide  blocks__slide--1  js-lazy">
-            </li>
-
-            <li class="blocks__slide  blocks__slide--2">
-              <h3 class="header--h3">Самый лучший день</h3>
-              <p class="text">Страна: Россия</p>
-              <p class="text">Жанр: комедия, музыка</p>
-              <p class="text">Время: 112 мин. / 01:52</p>
-            </li>
-
-            <li data-attr="block8-slide3" class="blocks__slide  blocks__slide--3  js-lazy">
-              <span id="btn08" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use></svg></span>
-            </li>
-
-            <li data-attr="block8-slide4" class="blocks__slide  blocks__slide--4  js-lazy">
-              <span id="btn-vid08" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use></svg></span>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div class="blocks__item  js-grid-item  js-filter-not1  js-filter-not3  js-filter-not4  js-filter-not5  js-filter-not7  js-filter-not8">
-          <ul>
-            <li data-attr="block9-slide1" class="blocks__slide  blocks__slide--1  js-lazy">
-            </li>
-
-            <li class="blocks__slide  blocks__slide--2">
-              <h3 class="header--h3">На гребне волны</h3>
-              <p class="text">Страна: Германия, Китай, США</p>
-              <p class="text">Жанр: боевик, триллер, криминал, спорт</p>
-              <p class="text">Время: 114 мин. / 01:54</p>
-            </li>
-
-            <li data-attr="block9-slide3" class="blocks__slide  blocks__slide--3  js-lazy">
-              <span id="btn09" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use></svg></span>
-            </li>
-
-            <li data-attr="block9-slide4" class="blocks__slide  blocks__slide--4  js-lazy">
-              <span id="btn-vid09" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use></svg></span>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div class="blocks__item  js-grid-item  js-filter-not4  js-filter-not3  js-filter-not2  js-filter-not1  js-filter-not5  js-filter-not6  js-filter-not8">
-          <ul>
-            <li data-attr="block10-slide1" class="blocks__slide  blocks__slide--1  js-lazy">
-            </li>
-
-            <li class="blocks__slide  blocks__slide--2">
-              <h3 class="header--h3">Стив Джобс</h3>
-              <p class="text">Страна: США</p>
-              <p class="text">Жанр: драма, биография</p>
-              <p class="text">Время: 122 мин. / 02:02</p>
-            </li>
-
-            <li data-attr="block10-slide3" class="blocks__slide  blocks__slide--3  js-lazy">
-              <span id="btn10" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use></svg></span>
-            </li>
-
-            <li data-attr="block10-slide4" class="blocks__slide  blocks__slide--4  js-lazy">
-              <span id="btn-vid10" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use></svg></span>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div class="blocks__item  js-grid-item  js-filter-not4  js-filter-not2  js-filter-not3  js-filter-not5  js-filter-not6  js-filter-not7  js-filter-not8">
-          <ul>
-            <li data-attr="block11-slide1" class="blocks__slide  blocks__slide--1  js-lazy">
-            </li>
-
-            <li class="blocks__slide  blocks__slide--2">
-              <h3 class="header--h3">Голоса большой страны</h3>
-              <p class="text">Страна: Россия</p>
-              <p class="text">Жанр: мюзикл, комедия, мелодрама</p>
-              <p class="text">Время: -</p>
-            </li>
-
-            <li data-attr="block11-slide3" class="blocks__slide  blocks__slide--3  js-lazy">
-              <span id="btn11" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use></svg></span>
-            </li>
-
-            <li data-attr="block11-slide4" class="blocks__slide  blocks__slide--4  js-lazy">
-              <span id="btn-vid11" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use></svg></span>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div class="blocks__item  js-grid-item  js-filter-not4  js-filter-not2  js-filter-not3  js-filter-not5  js-filter-not6  js-filter-not7  js-filter-not8">
-          <ul>
-            <li data-attr="block12-slide1" class="blocks__slide  blocks__slide--1  js-lazy">
-            </li>
-
-            <li class="blocks__slide  blocks__slide--2">
-              <h3 class="header--h3">Срочно выйду замуж</h3>
-              <p class="text">Страна: Россия</p>
-              <p class="text">Жанр: комедия, мелодрама</p>
-              <p class="text">Время: -</p>
-            </li>
-
-            <li data-attr="block12-slide3" class="blocks__slide  blocks__slide--3  js-lazy">
-              <span id="btn12" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use></svg></span>
-            </li>
-
-            <li data-attr="block12-slide4" class="blocks__slide  blocks__slide--4  js-lazy">
-              <span id="btn-vid12" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use></svg></span>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div class="blocks__item  js-grid-item  js-filter-not4  js-filter-not2  js-filter-not3  js-filter-not5  js-filter-not6  js-filter-not7  js-filter-not8">
-          <ul>
-            <li data-attr="block13-slide1" class="blocks__slide  blocks__slide--1  js-lazy">
-            </li>
-
-            <li class="blocks__slide  blocks__slide--2">
-              <h3 class="header--h3">Млечный путь</h3>
-              <p class="text">Страна: Россия</p>
-              <p class="text">Жанр: комедия</p>
-              <p class="text">Время: 95 мин. / 01:35</p>
-            </li>
-
-            <li data-attr="block13-slide3" class="blocks__slide  blocks__slide--3  js-lazy">
-              <span id="btn13" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use></svg></span>
-            </li>
-
-            <li data-attr="block13-slide4" class="blocks__slide  blocks__slide--4  js-lazy">
-              <span id="btn-vid13" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use></svg></span>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div class="blocks__item  js-grid-item  js-filter-not1  js-filter-not2  js-filter-not3  js-filter-not6  js-filter-not7  js-filter-not8">
-          <ul>
-            <li data-attr="block14-slide1" class="blocks__slide  blocks__slide--1  js-lazy">
-            </li>
-
-            <li class="blocks__slide  blocks__slide--2">
-              <h3 class="header--h3">Иван Царевич и Серый Волк 3</h3>
-              <p class="text">Страна: Россия</p>
-              <p class="text">Жанр: мультфильм, приключения, семейный</p>
-              <p class="text">Время: -</p>
-            </li>
-
-            <li data-attr="block14-slide3" class="blocks__slide  blocks__slide--3  js-lazy">
-              <span id="btn14" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use></svg></span>
-            </li>
-
-            <li data-attr="block14-slide4" class="blocks__slide  blocks__slide--4  js-lazy">
-              <span id="btn-vid14" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use></svg></span>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div class="blocks__item  js-grid-item  js-filter-not1  js-filter-not2  js-filter-not3  js-filter-not4  js-filter-not5  js-filter-not6  js-filter-not8">
-          <ul>
-            <li data-attr="block15-slide1" class="blocks__slide  blocks__slide--1  js-lazy">
-            </li>
-
-            <li class="blocks__slide  blocks__slide--2">
-              <h3 class="header--h3">Молодость</h3>
-              <p class="text">Страна: Италия, Франция, Швейцария, Великобритания</p>
-              <p class="text">Жанр: драма</p>
-              <p class="text">Время: 124 мин. / 02:04</p>
-            </li>
-
-            <li data-attr="block15-slide3" class="blocks__slide  blocks__slide--3  js-lazy">
-              <span id="btn15" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use></svg></span>
-            </li>
-
-            <li data-attr="block15-slide4" class="blocks__slide  blocks__slide--4  js-lazy">
-              <span id="btn-vid15" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use></svg></span>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div class="blocks__item  js-grid-item  js-filter-not4  js-filter-not2  js-filter-not3  js-filter-not5  js-filter-not6  js-filter-not7  js-filter-not8">
-          <ul>
-            <li data-attr="block16-slide1" class="blocks__slide  blocks__slide--1  js-lazy">
-            </li>
-
-            <li class="blocks__slide  blocks__slide--2">
-              <h3 class="header--h3">Страна ОЗ</h3>
-              <p class="text">Страна: Россия</p>
-              <p class="text">Жанр: комедия</p>
-              <p class="text">Время: 95 мин. / 01:35</p>
-            </li>
-
-            <li data-attr="block16-slide3" class="blocks__slide  blocks__slide--3  js-lazy">
-              <span id="btn16" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use></svg></span>
-            </li>
-
-            <li data-attr="block16-slide4" class="blocks__slide  blocks__slide--4  js-lazy">
-              <span id="btn-vid16" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use></svg></span>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div class="blocks__item  js-grid-item  js-filter-not4  js-filter-not2  js-filter-not3  js-filter-not5  js-filter-not6  js-filter-not7  js-filter-not8">
-          <ul>
-            <li data-attr="block17-slide1" class="blocks__slide  blocks__slide--1  js-lazy">
-            </li>
-
-            <li class="blocks__slide  blocks__slide--2">
-              <h3 class="header--h3">SOS, Дед Мороз или Все сбудется!</h3>
-              <p class="text">Страна: Россия</p>
-              <p class="text">Жанр: комедия, семейный</p>
-              <p class="text">Время: -</p>
-            </li>
-
-            <li data-attr="block17-slide3" class="blocks__slide  blocks__slide--3  js-lazy">
-              <span id="btn17" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use></svg></span>
-            </li>
-
-            <li data-attr="block17-slide4" class="blocks__slide  blocks__slide--4  js-lazy">
-              <span id="btn-vid17" class="blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use></svg></span>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-
-
-
-  <footer class="page-footer">
-    <div class="container">
-      <div id="share-btns" class="share-btns">
-        <!-- Facebook -->
-        <a href="http://www.facebook.com/sharer.php?u=http://kinonovinki.net/" target="_blank"><img src="img/facebook.png" alt="Facebook" /></a>
-        <!-- Twitter -->
-        <a href="https://twitter.com/share?url=http://kinonovinki.net/&amp;text=Сегодня%20в%20кино&amp;hashtags=киноновинки" target="_blank"><img src="img/twitter.png" alt="Twitter" /></a>
-        <!-- VK -->
-        <a href="http://vkontakte.ru/share.php?url=http://kinonovinki.net/" target="_blank"><img src="img/vk.png" alt="VK" /></a>
-        <!-- Google+ -->
-        <a href="https://plus.google.com/share?url=http://kinonovinki.net/" target="_blank"><img src="img/google.png" alt="Google" /></a>
-      </div>
-      <span class="copyright">&#169; 2015 - 2016</span>
-    </div>
-    <div class="hidden">
-      <a href="http://www.geisha-list.com/">http://www.geisha-list.com/</a>
-      <a href="http://kinonovinki.net/">http://kinonovinki.net/</a>
-    </div>
-  </footer>
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
-  <script src="js/script.js"></script>
-
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
-    (function (d, w, c) {
-      (w[c] = w[c] || []).push(function () {
-        try {
-          w.yaCounter34677360 = new Ya.Metrika({
-            id: 34677360,
-            clickmap: true,
-            trackLinks: true,
-            accurateTrackBounce: true
-          });
-        } catch (e) {}
-      });
-
-      var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () {
-          n.parentNode.insertBefore(s, n);
-        };
-      s.type = "text/javascript";
-      s.async = true;
-      s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-      if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-      } else {
-        f();
-      }
-    })(document, window, "yandex_metrika_callbacks");
-  </script>
-  <noscript>
-    <div><img src="https://mc.yandex.ru/watch/34677360" style="position:absolute; left:-9999px;" alt="" /></div>
-  </noscript>
-  <!-- /Yandex.Metrika counter -->
+			<nav class="filter">
+				<ul class="filter__list">
+					<li class="js-filter-all  filter__item  filter__item--active">Все фильмы</li>
+					<li class="js-filter  filter__item">Комедии</li>
+					<li class="js-filter  filter__item">Боевики</li>
+					<li class="js-filter  filter__item">Фантастика</li>
+					<li class="js-filter  filter__item">Ужасы</li>
+					<li class="js-filter  filter__item">Мультфильмы</li>
+					<li class="js-filter  filter__item">Драмы</li>
+					<li class="js-filter  filter__item">Приключения</li>
+					<li class="js-filter  filter__item">Триллеры</li>
+				</ul>
+			</nav>
+
+			
+
+			<div class="js-grid  blocks">
+				
+					
+
+				<div id="" class="js-grid-item  blocks__item">
+
+					<div class="blocks__slider-controls">
+						<span class="js-prev  slider-arrow  slider-arrow--prev"><svg width="23" height="22" preserveAspectRatio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-prev"></use></svg></span>
+						<span class="js-next  slider-arrow  slider-arrow--next"><svg width="23" height="22" preserveAspectRatio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-next"></use></svg></span>
+					</div>
+
+					<ul>
+						<li class="js-slide1  blocks__slide  blocks__slide--1"><img class="js-poster  blocks__img" src="" alt="poster"></li>
+
+						<li class="js-slide2  blocks__slide  blocks__slide--2">
+							<h3 class="js-name  header--h3"></h3>
+							<p class="text">Страна: <span class="js-country"></span></p>
+							<p class="text">Жанр: <span class="js-genre"></span></p>
+							<p class="text">Время: <span class="js-length"></span></p>
+						</li>
+
+						<li class="js-slide3  blocks__slide  blocks__slide--3">
+							<img class="js-img  blocks__img" src="" alt="image">
+							<span id="" class="js-btn-img  blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-zoom"></use></svg></span>
+						</li>
+
+						<li class="js-slide4  blocks__slide  blocks__slide--4">
+							<img class="js-frame  blocks__img" src="" alt="frame">
+							<span id="" class="js-btn-vid  blocks__btn"><svg width="43" height="42" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use></svg></span>
+						</li>
+					</ul>
+
+										
+					<div id="" class="js-popup-img  popups__window">
+						<div class="popups__pict">
+							<img class="js-img-full  popups__img" src="" alt="image">
+							<span class="js-close-img  popups__close-pict"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
+						</div>
+					</div>
+
+
+					<div id="" class="js-popup-vid  popups__window">
+						<div class="popups__vid">
+							<span class="js-close-vid  popups__close-vid"><svg width="28" height="28" preserveaspectratio="xMidYMid"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use></svg></span>
+							<iframe id="" class="js-video" width="640" height="360" src=""></iframe>
+						</div>
+					</div>					
+
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+
+
+
+	<footer class="page-footer">
+		<div class="container">
+			<div id="share-btns" class="share-btns">
+				<!-- Facebook -->
+				<a href="http://www.facebook.com/sharer.php?u=http://kinonovinki.net/" target="_blank"><img src="img/facebook.png" alt="Facebook" /></a>
+				<!-- Twitter -->
+				<a href="https://twitter.com/share?url=http://kinonovinki.net/&amp;text=Сегодня%20в%20кино&amp;hashtags=киноновинки" target="_blank"><img src="img/twitter.png" alt="Twitter" /></a>
+				<!-- VK -->
+				<a href="http://vkontakte.ru/share.php?url=http://kinonovinki.net/" target="_blank"><img src="img/vk.png" alt="VK" /></a>
+				<!-- Google+ -->
+				<a href="https://plus.google.com/share?url=http://kinonovinki.net/" target="_blank"><img src="img/google.png" alt="Google" /></a>
+			</div>
+			<span class="copyright">&#169; 2015 - 2016</span>
+		</div>
+		<div class="hidden">
+			<a href="http://www.geisha-list.com/">http://www.geisha-list.com/</a>
+			<a href="http://kinonovinki.net/">http://kinonovinki.net/</a>
+		</div>
+	</footer>
+
+
+
+	<!--	<script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script> -->
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (d, w, c) {
+			(w[c] = w[c] || []).push(function () {
+				try {
+					w.yaCounter34677360 = new Ya.Metrika({
+						id: 34677360,
+						clickmap: true,
+						trackLinks: true,
+						accurateTrackBounce: true
+					});
+				} catch (e) {}
+			});
+
+			var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function () {
+					n.parentNode.insertBefore(s, n);
+				};
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else {
+				f();
+			}
+		})(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/34677360" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
 
 </body>
 
