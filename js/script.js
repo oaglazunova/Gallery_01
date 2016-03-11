@@ -36,8 +36,8 @@ function populateMovies(movies) {
     $(template).find(".js-length").text(movieLength);
 
     $(template).find(".js-poster").attr("src", "img/" + i + "-1.jpg");
-    $(template).find(".js-img").attr("src", "img/" + i + "-popup.jpg");
-    $(template).find(".js-img-full").attr("src", "img/" + i + "-popup.jpg");
+    $(template).find(".js-img").attr("src", "img/" + i + "-3.jpg");
+    $(template).find(".js-img-full").attr("src", "img/" + i + "-3.jpg");
     $(template).find(".js-frame").attr("src", "img/" + i + "-4.jpg");
 
     $(template).find(".js-btn-img").attr("id", "btn" + i);
