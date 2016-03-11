@@ -1,81 +1,165 @@
 [
 {
-	"name": "Выживший",
+	"name": "Дивергент, глава 3: За стеной",
+	"country": "США",
+	"genre": "фантастика, боевик, приключения",
+	"length": "121 мин. / 02:01",
+	"trailer": "https://www.youtube.com/embed/eciGV-6j-J4"
+}, {
+	"name": "Кэрол",
+	"country": "Великобритания, США",
+	"genre": "драма, мелодрама",
+	"length": "118 мин. / 01:58",
+	"trailer": "https://www.youtube.com/embed/LKJTnYPgE5c"
+}, {
+	"name": "Братья из Гримсби",
+	"country": "Великобритания, Австралия",
+	"genre": "боевик, комедия",
+	"length": "83 мин. / 01:23",
+	"trailer": "https://www.youtube.com/embed/kC-oFj1BoNI"
+}, {
+	"name": "Как поднять миллион. Исповедь Z@drota",
 	"country": "Россия",
-	"genre": "фантастика, боевик",
-	"length": "91 мин. / 01:31",
-	"trailer": "https://www.youtube.com/embed/fITmdjxgEjM?version=3&enablejsapi=1"
+	"genre": "драма",
+	"length": "95 мин. / 01:35",
+	"trailer": "https://www.youtube.com/embed/0AQsawtyUwg"
 }, {
-	"name": "2",
-	"country": "2",
-	"genre": "2",
-	"length": "2",
-	"trailer": "https://www.youtube.com/embed/fITmdjxgEjM?version=3&enablejsapi=1"
+	"name": "Вакантна жизнь шеф-повара",
+	"country": "Россия",
+	"genre": "драма",
+	"length": "86 мин. / 01:26",
+	"trailer": "https://www.youtube.com/embed/iUhFkVksL9M"
 }, {
-	"name": "3",
-	"country": "3",
-	"genre": "3",
-	"length": "3",
-	"trailer": "https://www.youtube.com/embed/fITmdjxgEjM?version=3&enablejsapi=1"
+	"name": "Милый Ханс, дорогой Петр",
+	"country": "Россия, Великобритания, Германия",
+	"genre": "драма",
+	"length": "124 мин. / 02:04",
+	"trailer": "https://www.youtube.com/embed/VeTPpEOuqes"
 }, {
-	"name": "2",
-	"country": "2",
-	"genre": "2",
-	"length": "2",
-	"trailer": "https://www.youtube.com/embed/fITmdjxgEjM?version=3&enablejsapi=1"
+	"name": "Сахар",
+	"country": "Австралия",
+	"genre": "документальный",
+	"length": "103 мин. / 01:43",
+	"trailer": "https://www.youtube.com/embed/6uaWekLrilY"
 }, {
-	"name": "3",
-	"country": "3",
-	"genre": "3",
-	"length": "3",
-	"trailer": "https://www.youtube.com/embed/fITmdjxgEjM?version=3&enablejsapi=1"
+	"name": "Зверополис",
+	"country": "США",
+	"genre": "мультфильм, комедия, приключения, семейный",
+	"length": "108 мин. / 01:48",
+	"trailer": "https://www.youtube.com/embed/oqFqf-1NcEc"
 }, {
-	"name": "2",
-	"country": "2",
-	"genre": "2",
-	"length": "2",
-	"trailer": "https://www.youtube.com/embed/fITmdjxgEjM?version=3&enablejsapi=1"
+	"name": "Три девятки",
+	"country": "США",
+	"genre": "криминал, драма, триллер",
+	"length": "115 мин. / 01:55",
+	"trailer": "https://www.youtube.com/embed/gNy76NFhXKs"
 }, {
-	"name": "3",
-	"country": "3",
-	"genre": "3",
-	"length": "3",
-	"trailer": "https://www.youtube.com/embed/fITmdjxgEjM?version=3&enablejsapi=1"
+	"name": "Да здравствует Цезарь!",
+	"country": "Великобритания, США, Япония",
+	"genre": "комедия, детектив",
+	"length": "106 мин. / 01:46",
+	"trailer": "https://www.youtube.com/embed/LpH5ifyHHnQ"
 }, {
-	"name": "2",
-	"country": "2",
-	"genre": "2",
-	"length": "2",
-	"trailer": "https://www.youtube.com/embed/fITmdjxgEjM?version=3&enablejsapi=1"
+	"name": "8 лучших свиданий",
+	"country": "Россия",
+	"genre": "комедия, мелодрама",
+	"length": "",
+	"trailer": "https://www.youtube.com/embed/JeTGUwbHpBk"
 }, {
-	"name": "3",
-	"country": "3",
-	"genre": "3",
-	"length": "3",
-	"trailer": "https://www.youtube.com/embed/fITmdjxgEjM?version=3&enablejsapi=1"
+	"name": "Ошибка времени",
+	"country": "США",
+	"genre": "фантастика, триллер",
+	"length": "104 мин. / 01:44",
+	"trailer": "https://www.youtube.com/embed/3WqFygc9r74"
 }, {
-	"name": "2",
-	"country": "2",
-	"genre": "2",
-	"length": "2",
-	"trailer": "https://www.youtube.com/embed/fITmdjxgEjM?version=3&enablejsapi=1"
+	"name": "Тряпичный союз",
+	"country": "Россия",
+	"genre": "комедия, драма",
+	"length": "97 мин. / 01:37",
+	"trailer": "https://www.youtube.com/embed/J9jxMly8UZA"
 }, {
-	"name": "3",
-	"country": "3",
-	"genre": "3",
-	"length": "3",
-	"trailer": "https://www.youtube.com/embed/fITmdjxgEjM?version=3&enablejsapi=1"
+	"name": "Пятница",
+	"country": "Россия",
+	"genre": "комедия",
+	"length": "",
+	"trailer": "https://www.youtube.com/embed/DnS4hsCj2k8"
 }, {
-	"name": "2",
-	"country": "2",
-	"genre": "2",
-	"length": "2",
-	"trailer": "https://www.youtube.com/embed/fITmdjxgEjM?version=3&enablejsapi=1"
+	"name": "Боги Египта",
+	"country": "США, Австралия",
+	"genre": "фэнтези, боевик, приключения",
+	"length": "127 мин. / 02:07",
+	"trailer": "https://www.youtube.com/embed/cBltshJB_Pw"
 }, {
-	"name": "3",
-	"country": "3",
-	"genre": "3",
-	"length": "3",
-	"trailer": "https://www.youtube.com/embed/fITmdjxgEjM?version=3&enablejsapi=1"
+	"name": "По ту сторону двери",
+	"country": "Индия, Великобритания",
+	"genre": "ужасы",
+	"length": "96 мин. / 01:36",
+	"trailer": "https://www.youtube.com/embed/WTVwm9y8734"
+}, {
+	"name": "День выборов 2",
+	"country": "Россия",
+	"genre": "комедия",
+	"length": "",
+	"trailer": "https://www.youtube.com/embed/mwOVQnBLSFs"
+}, {
+	"name": "Мой король",
+	"country": "Франция",
+	"genre": "драма, мелодрама",
+	"length": "124 мин. / 02:04",
+	"trailer": "https://www.youtube.com/embed/9xYVc2ax9sA"
+}, {
+	"name": "Дэдпул",
+	"country": "США, Канада",
+	"genre": "фантастика, боевик, комедия, приключения",
+	"length": "108 мин. / 01:48",
+	"trailer": "https://www.youtube.com/embed/QR68Ju4lCM"
+}, {
+	"name": "В активном поиске",
+	"country": "США",
+	"genre": "мелодрама, комедия",
+	"length": "110 мин. / 01:50",
+	"trailer": "https://www.youtube.com/embed/cjxnoW_NXr8"
+}, {
+	"name": "Игра на понижение",
+	"country": "США",
+	"genre": "драма, комедия, биография",
+	"length": "130 мин. / 02:10",
+	"trailer": "https://www.youtube.com/embed/1xk2qg8WKng"
+}, {
+	"name": "Джой",
+	"country": "США",
+	"genre": "драма, комедия",
+	"length": "124 мин. / 02:04",
+	"trailer": "https://www.youtube.com/embed/1GU9fGPOiCA"
+}, {
+	"name": "Дедушка легкого поведения",
+	"country": "США",
+	"genre": "комедия",
+	"length": "102 мин. / 01:42",
+	"trailer": "https://www.youtube.com/embed/gK9aRe3P760"
+}, {
+	"name": "Выживший",
+	"country": "США",
+	"genre": "триллер, драма, приключения, вестерн",
+	"length": "156 мин. / 02:36",
+	"trailer": "https://www.youtube.com/embed/Nu_FG63jbJ0"
+}, {
+	"name": "На гребне волны",
+	"country": "США, Германия, Китай",
+	"genre": "боевик, триллер, криминал, спорт",
+	"length": "114 мин. / 01:54",
+	"trailer": "https://www.youtube.com/embed/l0mFdb2dt5c"
+}, {
+	"name": "Молодость",
+	"country": "Италия, Франция, Великобритания, Швейцария",
+	"genre": "драма, комедия",
+	"length": "124 мин. / 02:04",
+	"trailer": "https://www.youtube.com/embed/hNg3anMf6nM"
+}, {
+	"name": "Иррациональный человек",
+	"country": "США",
+	"genre": "драма, детектив",
+	"length": "95 мин. / 01:35",
+	"trailer": "https://www.youtube.com/embed/v9OkNixeQRo"
 }
 ]

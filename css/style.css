@@ -861,6 +861,10 @@ body {
 	border: 1px solid #dc5b1d;
 }
 
+.blocks__item:hover {
+	outline: 5px solid #dc5b1d;
+}
+
 .blocks__item .header--h3 {
 	margin: 0 0 30px;
 }
@@ -921,8 +925,10 @@ body {
 
 .blocks__img {
 	height: 313px;
-	width: 220px;
-	image-rendering: optimizeQuality;
+}
+
+.blocks__img--3 {
+	left: -50%;
 }
 
 .blocks__btn {
@@ -941,14 +947,6 @@ body {
 
 .blocks__btn:hover {
 	fill: #dc5b1d;
-}
-
-.hide {
-	display: none;
-}
-
-.show {
-	display: block;
 }
 
 @media (min-width: 700px) {
@@ -1045,18 +1043,12 @@ body {
 	margin: 0 0 20px;
 }
 
-.blocks {
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-}
-
 }
 
 @media (min-width: 1260px) {
 
 .container {
-	min-width: 1260px;
+	width: 1260px;
 	width: auto;
 }
 
